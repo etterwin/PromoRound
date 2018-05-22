@@ -1,0 +1,16 @@
+<svg width="80" height="75" viewBox="0 0 80 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M 2 44.6935L 62 44.6935C 63.1046 44.6935 64 43.7981 64 42.6935L 64 2C 64 0.895432 63.1046 1.21455e-06 62 1.21455e-06L 2 1.21455e-06C 0.895431 1.21455e-06 7.54452e-08 0.895432 7.54452e-08 2L 7.54452e-08 42.6935C 7.54452e-08 43.7981 0.895431 44.6935 2 44.6935Z" transform="translate(8 28.3066)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M 2 18L 4 18C 5.10457 18 6 17.1046 6 16L 6 2C 6 0.895431 5.10457 4.89151e-07 4 4.89151e-07L 2 4.89151e-07C 0.895431 4.89151e-07 7.07299e-09 0.895431 7.07299e-09 2L 7.07299e-09 16C 7.07299e-09 17.1046 0.895431 18 2 18Z" transform="translate(2 42)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M 2 18L 4 18C 5.10457 18 6 17.1046 6 16L 6 2C 6 0.895431 5.10457 4.89151e-07 4 4.89151e-07L 2 4.89151e-07C 0.895431 4.89151e-07 7.07299e-09 0.895431 7.07299e-09 2L 7.07299e-09 16C 7.07299e-09 17.1046 0.895431 18 2 18Z" transform="translate(72 42)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_4" d="M 3.05176e-06 0L 3.05176e-06 12.2579" transform="translate(39.4453 16.0488)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_5" d="M 14.0816 7.0841C 14.0816 10.9965 10.9293 14.1682 7.04079 14.1682C 3.15227 14.1682 0 10.9965 0 7.0841C 0 3.17166 3.15227 -7.59092e-08 7.04079 -7.59092e-08C 10.9293 -7.59092e-08 14.0816 3.17166 14.0816 7.0841Z" transform="translate(32.4062 2)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_6" d="M 14.0816 7.0841C 14.0816 10.9965 10.9293 14.1682 7.04079 14.1682C 3.15227 14.1682 1.5089e-07 10.9965 1.5089e-07 7.0841C 1.5089e-07 3.17166 3.15227 1.21455e-06 7.04079 1.21455e-06C 10.9293 1.21455e-06 14.0816 3.17166 14.0816 7.0841Z" transform="translate(17.416 36.4648)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_7" d="M 14.0816 7.0841C 14.0816 10.9965 10.9293 14.1682 7.04079 14.1682C 3.15227 14.1682 0 10.9965 0 7.0841C 0 3.17166 3.15227 1.21455e-06 7.04079 1.21455e-06C 10.9293 1.21455e-06 14.0816 3.17166 14.0816 7.0841Z" transform="translate(48.4238 36.4648)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+<path id="Vector_8" d="M 0 1.21455e-06L 4.7466 2.86548L 9.33498 1.21455e-06L 14.754 2.86548L 18.9073 1.21455e-06" transform="translate(30.625 59.1504)" stroke="#C4C4C4" stroke-width="2.5" stroke-miterlimit="10"/>
+</g>
+</g>
+</g>
+</svg>
