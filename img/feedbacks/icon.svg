@@ -1,0 +1,33 @@
+<svg width="28" height="29" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 3.5</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(7039 -24865)">
+<g id="Group 3.5">
+<g id="Group 2.2">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-7038.35 24865)" fill="#D41122"/>
+<use xlink:href="#path0_fill" transform="translate(-7038.35 24865)" fill="url(#paint1_linear)"/>
+</g>
+<g id="Exclude">
+<use xlink:href="#path1_fill" transform="translate(-7028.67 24872.5)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-7030.79 24879.8)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(-7024.75 24879.8)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-27.271 -19.8008 19.0071 -24.0461 17.7675 36.5761)">
+<stop offset="0" stop-color="#FF2E40"/>
+<stop offset="1" stop-color="#D41122"/>
+</linearGradient>
+<path id="path0_fill" d="M 27.271 14.205C 27.271 22.0501 21.1662 28.4099 13.6355 28.4099C 6.10483 28.4099 0 22.0501 0 14.205C 0 6.35977 6.10483 0 13.6355 0C 21.1662 0 27.271 6.35977 27.271 14.205Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 4.17578C 0 6.47656 1.82666 8.34961 4.07031 8.34961C 6.31396 8.34961 8.14062 6.47656 8.14062 4.17383C 8.14062 1.87305 6.31396 0 4.07031 0C 1.82666 0 0 1.87305 0 4.17578ZM 2.43994 3.63867L 3.51514 3.50977L 3.96094 2.43359C 3.97656 2.39453 4.01221 2.36719 4.05322 2.36719C 4.09473 2.36719 4.12939 2.39453 4.14648 2.43359L 4.5918 3.50977L 5.66748 3.64062C 5.70605 3.64453 5.74023 3.67383 5.75293 3.7168C 5.76562 3.75977 5.75293 3.80273 5.72461 3.83203L 4.9248 4.62695L 5.14307 5.78516C 5.15088 5.82617 5.13672 5.87109 5.10352 5.89844C 5.07031 5.92383 5.02734 5.92383 4.99316 5.9043L 4.05322 5.31836L 3.11328 5.9043C 3.07959 5.92383 3.03662 5.92383 3.00342 5.89844C 2.96973 5.87109 2.95605 5.82617 2.96338 5.78516L 3.18262 4.62695L 2.38281 3.83203C 2.354 3.80469 2.34131 3.75977 2.354 3.7168C 2.35938 3.69922 2.36816 3.68359 2.37939 3.67188C 2.396 3.6543 2.41699 3.64258 2.43994 3.63867Z"/>
+<path id="path2_fill" d="M 2.45334 0L 0 4.3308L 2.78532 4.24059L 4.23206 6.18066L 6.55344 1.92498C 5.02347 2.00016 3.31842 1.24725 2.45334 0Z"/>
+<path id="path3_fill" d="M 3.83934 0L 6.10603 4.27009L 3.46769 4.16398L 2.13678 6.14964L 0 1.96953C 1.50128 1.75867 2.99321 1.21993 3.83934 0Z"/>
+</defs>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="20" height="12" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>if_group2_309041</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3629 -20921)">
+<g id="if_group2_309041">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(3633.55 20921)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(3642.64 20921)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(3642.36 20927.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(3642.64 20921)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(3642.36 20927.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(3630.82 20921)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(3629 20927.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 2.72727 2.76923C 2.72727 1.2 3.90909 0 5.45455 0C 7 0 8.18182 1.2 8.18182 2.76923C 8.18182 4.33846 7 5.53846 5.45455 5.53846C 3.90909 5.53846 2.72727 4.33846 2.72727 2.76923ZM 5.45455 7.38462C 1.27273 7.38462 0 10.4308 0 10.4308L 0 12L 10.9091 12L 10.9091 10.4308C 10.9091 10.4308 9.63636 7.38462 5.45455 7.38462Z"/>
+<path id="path1_fill" d="M 2.27273 4.61538C 3.52792 4.61538 4.54545 3.5822 4.54545 2.30769C 4.54545 1.03319 3.52792 0 2.27273 0C 1.01753 0 0 1.03319 0 2.30769C 0 3.5822 1.01753 4.61538 2.27273 4.61538Z"/>
+<path id="path2_fill" d="M 2.54545 0C 1.45455 0 0.636364 0.276923 -1.73395e-07 0.738462C 2.09091 1.75385 2.90909 3.50769 2.90909 3.69231L 2.90909 3.78462L 6.63636 3.78462L 6.63636 2.58462C 6.63636 2.49231 5.63636 0 2.54545 0Z"/>
+<path id="path3_fill" d="M 4.09091 0C 5.18182 0 6 0.276923 6.63636 0.738462C 4.54545 1.75385 3.72727 3.50769 3.72727 3.69231L 3.72727 3.78462L 0 3.78462L 0 2.58462C 0 2.49231 1 0 4.09091 0Z"/>
+</defs>
+</svg>

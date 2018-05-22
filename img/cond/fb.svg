@@ -1,0 +1,26 @@
+<svg width="70" height="70" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 24.1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2169 -13414)">
+<g id="Group 24.1">
+<g id="Ellipse 4.3">
+<use xlink:href="#path0_fill" transform="translate(2169 13414)" fill="#385492"/>
+</g>
+<g id="Group 4">
+<g id="Canvas">
+<g id="Layer 1 3">
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(2198.75 13438.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 70 35C 70 54.33 54.33 70 35 70C 15.67 70 0 54.33 0 35C 0 15.67 15.67 0 35 0C 54.33 0 70 15.67 70 35Z"/>
+<path id="path1_fill" d="M 9.91667 6.7999L 6.5394 6.7999L 6.5394 4.62035C 6.5394 3.80183 7.09071 3.61099 7.47903 3.61099C 7.86645 3.61099 9.86232 3.61099 9.86232 3.61099L 9.86232 0.012606L 6.58004 -3.75637e-16C 2.93639 -3.75637e-16 2.1072 2.68379 2.1072 4.40127L 2.1072 6.7999L 7.54317e-15 6.7999L 7.54317e-15 10.5078L 2.1072 10.5078C 2.1072 15.2664 2.1072 21 2.1072 21L 6.5394 21C 6.5394 21 6.5394 15.2099 6.5394 10.5078L 9.53013 10.5078L 9.91667 6.7999Z"/>
+</defs>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="70" height="70" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 12.4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2523 -13498)">
+<g id="Group 12.4">
+<g id="Ellipse 4.3">
+<use xlink:href="#path0_fill" transform="translate(2523 13498)" fill="#FF8F3D"/>
+</g>
+<g id="Ellipse 5">
+<use xlink:href="#path1_fill" transform="translate(2544 13530)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse 5.1">
+<use xlink:href="#path1_fill" transform="translate(2554.5 13530)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse 5.2">
+<use xlink:href="#path1_fill" transform="translate(2565 13530)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 70 35C 70 54.33 54.33 70 35 70C 15.67 70 0 54.33 0 35C 0 15.67 15.67 0 35 0C 54.33 0 70 15.67 70 35Z"/>
+<path id="path1_fill" d="M 6 3C 6 4.65685 4.65685 6 3 6C 1.34315 6 0 4.65685 0 3C 0 1.34315 1.34315 0 3 0C 4.65685 0 6 1.34315 6 3Z"/>
+</defs>
+</svg>

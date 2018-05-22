@@ -1,0 +1,23 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 22.1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-8179 -19075)">
+<g id="Group 22.1">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(8179.02 19075.5)" fill="#F8F8F8"/>
+</g>
+<g id="Group 20.1">
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="translate(8184.54 19081)" fill="#353535"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 8188.79 19081)" fill="#353535"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 15.2825 7.64125C 15.2825 11.8614 11.8614 15.2825 7.64125 15.2825C 3.4211 15.2825 0 11.8614 0 7.64125C 0 3.4211 3.4211 0 7.64125 0C 11.8614 0 15.2825 3.4211 15.2825 7.64125Z"/>
+<path id="path1_stroke" d="M -0.353553 0.353553L 3.89158 4.59869L 4.59869 3.89158L 0.353553 -0.353553L -0.353553 0.353553Z"/>
+</defs>
+</svg>
