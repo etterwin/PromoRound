@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromoRound</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
+    <link rel="stylesheet" href="./css/croppie.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_sprint3.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/customScroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/croppie.js"></script>
+
+    <script src="./js/common.js"></script>
+
+
+</head>
+<body class="user_auth">
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+        //duration: 1000
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <a href="javascript:void(0);" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Конкурсы
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_active">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Организаторы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Участники
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Агентства
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Помощь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-user__btn">
+                    <a href="#">
+                        <button type="button" class="btn btn_danger">+ Создать конкурс</button>
+                    </a>
+                </div>
+                <div class="header-user__mail">
+                    <div class="header-user__mail-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__notif">
+                    <div class="header-user__notif-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__avatar">
+                    <img src="img/users/h-user.png" alt="">
+
+                    <div class="header-header_menu">
+                        <div class="header_usermenu_inner">
+                            <a href="#">Профиль</a>
+                            <a href="#">Редактировать</a>
+                            <a href="#" class="header_usermenu_quit">
+                                Выход <span class="quit_ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="create-head">
+        <div class="create-head__cont">
+            <div class="create-head__items">
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>тарифы</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>настройки</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>статистика</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header__slick"></div>
+<div class="wrapper wrapper_organizers">
+    <section class="welcome">
+        <div class="container">
+            <h1 class="welcome__title h2">
+                Организаторы
+            </h1>
+            <p class="welcome__description">Участвуйте в розыгрышах призов и создавайте свои розыгрыши.
+                Приложение позволяет проводить розыгрыши от начала и до конца с оповещением победителей.</p>
+            <p class="welcome__medium">545 организаторов</p>
+        </div>
+    </section>
+    <div class="organizers">
+
+        <div class="contests__header contests__header_filter">
+            <div class="container">
+                <div class="filters row">
+                    <div class="filters_group filters_group_1">
+                        <div class="filters__item filters__item_trigger">
+                            <div class="checkbox checkbox_trigger">
+                                <input type="checkbox" class="checkbox__input" id="contests_view" />
+                                <label for="contests_view"></label>
+                            </div>
+
+                            <div class="filters__radios">
+                                <div class="filters__radio">
+                                    <label class="control control--radio l2">
+                                        <input type="radio" name="access-radio" checked>
+                                        <div class="control__indicator"></div>
+                                        <div class="filters__radio-txt">Проверенные</div>
+                                        <div class="clear"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="filters_group filters_group_2 filters__sels">
+                        <div class="flex-row jc-center ai-center">
+                            <div class="filters__item filters__item_select">
+                                <select class="select" name="contests__category">
+                                    <option>Косметика</option>
+                                    <option>Авто</option>
+                                    <option>Еда</option>
+                                    <option>Средства ухода</option>
+                                </select>
+                            </div>
+                            <div class="filters__item filters__item_select">
+                                <select class="select" name="contests__sort">
+                                    <option>Самые новые</option>
+                                    <option>Быстрые</option>
+                                    <option>Старые</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="filters__search">
+                        <div class="filters__item filters__item_search">
+                            <form action="javascript:void(0);" class="search">
+                                <button type="button" class="search__button">
+                                    <i class="icon icon_search"></i>
+                                </button>
+                                <input type="text" placeholder="Поиск" class="search__input" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Borodist</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                1 520
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_auto">Авто</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Swisstouch</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                0
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Моя семья</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_negative">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                - 2
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Mr.Right</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                480
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_auto">Авто</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Swisstouch</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                0
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Моя семья</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_negative">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                - 2
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Mr.Right</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                480
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Borodist</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                1 520
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="organizers__organize">
+                <h3>Стань одним из организаторов!</h3>
+                <p>Это просто, только оставь свои контактные данные и мы пришлем приглашение</p>
+                <div class="organizers__form">
+                    <div class="organizers__form-button">
+                        <button class="btn btn_white btn_org js-click pp_" type="button" data-pp="org-pp">стать организатором</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pp org-pp-wrap" data-pp="org-pp">
+            <div class="org-pp">
+                <div class="org-pp__top">
+                    <a href="javascript:void(0);" class="close"></a>
+                    <div class="org-pp__title">
+                        <h3>Стать организатором</h3>
+                    </div>
+                    <div class="org-pp__text">
+                        Организовывая розыгрыши или раздачи, Вы тем самым активно продвигаете свой продукт и проект в целом, что увеличивает объём продаж и охват аудитории.
+                    </div>
+                </div>
+
+                <div class="become-org__form">
+                    <form method="" action="">
+                        <fieldset>
+                            <div class="become-org__fields-wrap">
+                                <div class="become-org__fields">
+                                    <div class="field">
+                                        <div class="field__title">Название</div>
+                                        <div class="field__input">
+                                            <input type="text" placeholder="Например, Давид Шевченко">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="field__title">Описание</div>
+                                        <div class="field__input">
+                                            <input type="text" placeholder="Например, Давид Шевченко">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="become-org__fields">
+                                    <div class="field">
+                                        <div class="field__title">Веб-сайт</div>
+                                        <div class="field__input">
+                                            <input type="text" placeholder="Например, Давид Шевченко">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="field__title">Тематика</div>
+                                        <div class="field__input">
+                                            <div class="filters__item filters__item_select">
+                                                <select class="select" name="contests__category">
+                                                    <option>Косметика</option>
+                                                    <option>Авто</option>
+                                                    <option>Еда</option>
+                                                    <option>Средства ухода</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="become-org__pics-wrap">
+                                <div class="become-org__pics">
+                                    <a href="#" class="pics__avatar">
+                                        <div class="avatar-add">
+                                            <span>Аватар</span>
+                                        </div>
+                                        <img src="" alt="">
+                                    </a>
+                                    <div class="pics__cover" data-pic_cov="cropp-photo">
+                                        <div class="cover-add">
+                                            <span>Обложка</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Картинки выбраны -->
+                                <!--<div class="become-org__pics">-->
+                                    <!--<a href="#" class="pics__avatar pics__avatar_added">-->
+                                        <!--<div class="avatar-add">-->
+                                            <!--<span>Аватар</span>-->
+                                        <!--</div>-->
+                                        <!--<img src="./img/avatars/borodist.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--<div class="pics__cover pics__cover_added" data-pic_cov="cropp-photo">-->
+                                    <!--<div class="cover-add">-->
+                                        <!--<span>Обложка</span>-->
+                                    <!--</div>-->
+                                    <!--<img src="./img/avatars/borodist.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="become-org__titles">-->
+                                    <!--<div class="become-org__title become-org__title-avatar">-->
+                                        <!--<span>Аватар</span>-->
+                                    <!--</div>-->
+                                    <!--<div class="become-org__title become-org__title-cover">-->
+                                        <!--<span>Обложка</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+
+                            </div>
+                            <div class="become-org__check">
+                                <div class="checkbox checkbox_check">
+                                    <input type="checkbox" class="checkbox__input" id="form__become-org">
+                                    <label for="form__become-org">Я являюсь официальным представителем и принимаю Правила пользования сайтом</label>
+                                </div>
+                            </div>
+                            <div class="become-org__submit">
+                                <button class="btn btn_danger" type="submit">стать организатором</button>
+                            </div>
+                            <div class="pp cropp-ph-wrap" data-pic_cov="cropp-photo">
+                                <div class="cropp-ph">r
+                                    <div class="cropp-ph__close"></div>
+                                    <form method="" action="">
+                                        <fieldset>
+                                            <div class="cropp-ph__cont-upload">
+                                                <div class="cropp-ph__cont">
+                                                    <div class="prize_image_zone">
+                                                        <div class="prize_image_zone_title">Обложка</div>
+                                                        <div class="prize_image_zone_ico"></div>
+                                                        <div class="prize_image_zone_text">Перетащите фото или выберите файл с вашего компьютера</div>
+                                                        <div class="prize_image_zone_link">Загрузить фото</div>
+                                                        <input type="file" id="upload" value="Choose a file" accept="image/*">
+                                                    </div>
+                                                    <div class="cropp-ph__dscr">
+                                                        <span>Рекомендуемый размер: 1920x300 px, формат: png, jpeg, gif.</span>
+                                                        <span>Файл не должен превышать 5 МБ.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cropp-ph__cont-cropp hide">
+                                                <div class="cropp-ph__title">
+                                                    <h4>Обложка</h4>
+                                                </div>
+                                                <div class="cropp-ph__txt">
+                                                    Выбранная область будет показываться на странице сообщества
+                                                </div>
+                                                <div class="cropp-ph__cr-cont" id="main-cropper">
+
+                                                </div>
+                                                <div class="upload-msg">
+                                                    Upload a file to start cropping
+                                                </div>
+                                                <div class="cropp-ph__buttons">
+                                                    <button type="button" class="btn btn_grey js-click cropp-ph__btn_back">
+                                                        <span class="btn_back_ico"></span>
+                                                        назад
+                                                    </button>
+                                                    <button type="submit" class="btn btn_danger js-click cropp-ph__btn_save">сохранить</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Borodist</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                1 520
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item" >
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_auto">Авто</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Swisstouch</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                0
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Моя семья</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_negative">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                - 2
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Mr.Right</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                480
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_auto">Авто</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/swisstouch.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Swisstouch</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                0
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/semia.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Моя семья</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_negative">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                - 2
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/right.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Mr.Right</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                480
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 p10">
+                    <div class="organizers__item">
+                        <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                        <div class="organizers__img organizers__img_i">
+                            <a href="#">
+                                <img src="./img/contests/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__avatar">
+                            <a href="#">
+                                <img src="./img/avatars/borodist.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="organizers__name confirm">
+                            <a href="#">
+                                <span>Borodist</span>
+                            </a>
+                        </div>
+                        <div class="organizers__rating organizers__rating_positive">
+                            <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                            <span class="quantity">
+                                1 520
+                                <span>рейтинг</span>
+                            </span>
+                            <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                        </div>
+                        <div class="organizers__desc">
+                            Популярный российский бренд, который производит средства для девушек в
+                            стиле пин-ап ...
+                        </div>
+                        <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                    </div>
+                </div>
+            </div>
+            <div class="more more_materials">
+                <button class="btn btn_default btn_lg js-click" type="button">Показать еще</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <a href="javascript:void(0);" class="footer__toplink js-click">
+            <i class="icon icon_arrow"></i>
+        </a>
+        <nav class="footer__menu">
+            <ul class="nav nav_inline">
+                <li class="nav__item">
+                    <a href="javascript:void(0)">О проекте</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Брендинг</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Политика конфиденциальности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Условия использования</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__copyright">
+            &copy; 2018 PromoRound. Все права защищены.
+        </div>
+    </div>
+</footer>
+<div class="pp pp_login" data-pp="login">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Вход</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>У вас еще нет аккаунта? </p>
+                <a href="javascript:void(0);" class="pp_" data-pp="reg">Создать аккаунт</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <div class="form__row">
+                        <div class="checkbox checkbox_check">
+                            <input type="checkbox" class="checkbox__input" checked="" id="form__remember">
+                            <label for="form__remember">Запомнить меня</label>
+                        </div>
+                        <div class="pp__forgot">
+                            <a class="pp_" data-pp="recov" href="javascript:void(0);">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn_danger btn_enter">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_reg" data-pp="reg">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Регистрация</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>Уже есть аккаунт?</p>
+                <a href="javascript:void(0);" class="pp_" data-pp="login">Войти</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Введите ваш пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Повторите ваш пароль">
+                        <div class="pp__message pp__message_error">Неверный пароль</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_reg">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_recov" data-pp="recov">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Восстановление<br>пароля</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>После заполнения формы мы отправим специальную ссылку на указанный электронный адрес, перейдя по которой вы сможете задать новый пароль</p>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_recov">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="pp__ent-reg">
+                <span class="pp__ent-part pp_" data-pp="login">Вход</span>
+                <span class="pp__ent-slash"> / </span>
+                <span class="pp__reg-part pp_" data-pp="reg">Регистрация</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

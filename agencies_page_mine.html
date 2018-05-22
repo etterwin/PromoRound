@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromoRound</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/customScroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+
+</head>
+<body class="user_auth">
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        //duration: 1000
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <a href="javascript:void(0);" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Конкурсы
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_active">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Организаторы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Участники
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Агентства
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Помощь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-user__btn">
+                    <a href="#">
+                        <button type="button" class="btn btn_danger">+ Создать конкурс</button>
+                    </a>
+                </div>
+                <div class="header-user__mail">
+                    <div class="header-user__mail-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__notif">
+                    <div class="header-user__notif-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__avatar">
+                    <img src="img/users/h-user.png" alt="">
+
+                    <div class="header-header_menu">
+                        <div class="header_usermenu_inner">
+                            <a href="#">Профиль</a>
+                            <a href="#">Редактировать</a>
+                            <a href="#" class="header_usermenu_quit">
+                                Выход <span class="quit_ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="create-head">
+        <div class="create-head__cont">
+            <div class="create-head__items">
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>тарифы</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>настройки</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>статистика</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header__slick"></div>
+<div class="wrapper wrapper_organizer-page">
+    <div class="organizer-page__header">
+        <div class="upload_header_form">
+            <form class="" method="" action="">
+                <input type="file" class="" name="" id="header_image">
+                <label for="header_image"><div class="upload_header_form_content">
+                    <div class="upload_header_image">
+                        <img src="img/members/upload_head_icon.svg" alt=""/>
+                    </div>
+                    <div class="upload_header_text">
+                        Заменить изображение шапки
+                    </div>
+                    <div class="upload_header_text_sub">
+                        Мы рекомендуем загружать изображения в разрешении 1920×300. Формат — JPG, GIF или PNG.
+                    </div>
+                </div></label>
+            </form>
+        </div>
+        <img src="./img/contests/borodist_header.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="organizers__item organizers__item_xlg">
+                    <div class="organizers__avatar agency__avatar">
+                        <img src="./img/agency/borodist.png" alt="">
+                    </div>
+                    <div class="organizers__name">
+                        <span>Borodist</span>
+                    </div>
+                    <div class="organizers__desc">
+                        Популярный российский бренд, который производит средства по уходу за бородой,
+                        а также другие виды косметики и аксессуаров для мужчин.
+                    </div>
+                    <div class="organizers__web">
+                        <a href="javascript:void(0)">www.borodist.ru</a>
+                    </div>
+                    <div class="organizers__rating organizers__rating_positive">
+                        <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                        <span class="quantity">
+                                1 450
+                                <span>рейтинг</span>
+                            </span>
+                        <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                    </div>
+
+                    <div class="edit_block edit_block_i edit_block_ii">
+                        <a href="#" class="btn btn_dark">
+                            <span class="btn_edit_ico"></span>
+                            Редактировать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subscribers">
+                    <div class="subscribers__title">Подписчики</div>
+                    <div class="subscribers__avatars subscribers__avatars_60_60">
+                        <div class="members__item"><img src="./img/users/img1.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img2.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img3.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img4.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img3.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img1.jpg" alt=""></div>
+                        <div class="members__item"><img src="./img/users/img1.jpg" alt=""></div>
+                    </div>
+                    <div class="subscribers__quantity">18 886 подписчиков</div>
+                    <button type="button" class="btn btn_dark subscribers__btn js-click">
+                        + Подписаться
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <div class="post post_organizer">
+                    <div class="post__title">
+                        <a href="javascript:void(0)">Пацаны, какой розыгрыш хотите чтобы мы провели?</a>
+                    </div>
+                    <footer>
+                        <div class="post__date">4 июн в 20:46</div>
+                        <div class="post__comments">
+                            <a href="javascript:void(0)">
+                                <i class="icon icon_comment"></i>
+                                <span>12</span>
+                            </a>
+                            <div class="post_member_activity">
+                                <a href="#">
+                                    Вся лента активности
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="member_stats_wrapper">
+                    <div class="member_stats_wrapp">
+                        <div class="member_stats_item member_stats_item_clickable" data-tab="5">
+                            <span class="member_stats_item_val">3</span>
+                            <span class="member_stats_item_desc">Организации</span>
+                        </div>
+
+                        <div class="member_stats_item member_stats_item_clickable" data-tab="4">
+                            <span class="member_stats_item_val">45</span>
+                            <span class="member_stats_item_desc">призов</span>
+                        </div>
+
+                        <div class="member_stats_item member_stats_item_clickable" data-tab="6">
+                            <span class="member_stats_item_val">345</span>
+                            <span class="member_stats_item_desc">комментариев</span>
+                        </div>
+                        <div class="member_stats_item member_stats_item_clickable" data-tab="7">
+                            <span class="member_stats_item_val">0</span>
+                            <span class="member_stats_item_desc">жалоб</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member_tabs_head">
+                    <div class="member_tabs_head_inner">
+                        <div class="member_tabs_head_item active" data-tab="1">
+                            <span class="rounds_ico"></span>
+                            <span class="tab_title">Все <span class="tab_title_val">10</span></span>
+                        </div>
+                        <div class="member_tabs_head_item" data-tab="2">
+                            <span class="wins_ico"></span>
+                            <span class="tab_title">Розыгрыши <span class="tab_title_val">3</span></span>
+                        </div>
+                        <div class="member_tabs_head_item" data-tab="3">
+                            <span class="wins_ico"></span>
+                            <span class="tab_title">Раздачи <span class="tab_title_val">7</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contests__header contests__header_filter">
+                    <div class="filters">
+                        <div class="filters_group filters_group_1 filters_group_1i">
+                            <div class="filters__item filters__item_trigger">
+                                <div class="checkbox checkbox_trigger">
+                                    <input type="checkbox" class="checkbox__input" id="contests_view" />
+                                    <label for="contests_view"></label>
+                                </div>
+
+                                <div class="filters__radios">
+                                    <div class="filters__radio">
+                                        <label class="control control--radio l2">
+                                            <input type="radio" name="access-radio" checked>
+                                            <div class="control__indicator"></div>
+                                            <div class="filters__radio-txt">Все</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="filters__radio">
+                                        <label class="control control--radio l2">
+                                            <input type="radio" name="access-radio">
+                                            <div class="control__indicator"></div>
+                                            <div class="filters__radio-txt">Активные</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="filters__radio">
+                                        <label class="control control--radio l2">
+                                            <input type="radio" name="access-radio">
+                                            <div class="control__indicator"></div>
+                                            <div class="filters__radio-txt">Завершенные</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="filters_group filters_group_2 filters_group_2i filters__sels">
+                            <div class="flex-row jc-center ai-center">
+                                <div class="filters__item filters__item_select">
+                                    <select class="select" name="contests__sort">
+                                        <option>Самые новые</option>
+                                        <option>Последние</option>
+                                        <option>Старые</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member_tabs_">
+                    <div class="member_tabs_item active" data-tab="1">
+                        <div class="contests__materials">
+                            <div class="row">
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#222">
+                                        <a href="javascript:void(0);" class="contest__link">
+                                                <span class="contest__desc">
+                                                    Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                                                    Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                                                    получи набор косметики от Borodist. Выберем самых ...
+                                                </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/borodist.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_cosmetic  ">Косметика</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_gift"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__in js-clickstagram"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__mo js-clickre"
+                                                           data-toggle="tooltip"
+                                                           title="И ещё 4 условия">
+                                                            ...
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Новогодний <nobr>конкурс-розыгрыш</nobr>!</h5>
+                                            <div class="contest__progress contest__progress_hot" data-days="0.001">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="Borodist"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">Borodist</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#C9D4CE">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#0d0d0d">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#3D0F0F">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member_tabs_item" data-tab="2">
+                        <div class="contests__materials">
+                            <div class="row">
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#222">
+                                        <a href="javascript:void(0);" class="contest__link">
+                                                <span class="contest__desc">
+                                                    Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                                                    Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                                                    получи набор косметики от Borodist. Выберем самых ...
+                                                </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/borodist.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <span class="win_badge"></span>
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_cosmetic  ">Косметика</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_gift"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__in js-clickstagram"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__mo js-clickre"
+                                                           data-toggle="tooltip"
+                                                           title="И ещё 4 условия">
+                                                            ...
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Новогодний <nobr>конкурс-розыгрыш</nobr>!</h5>
+                                            <div class="contest__progress">
+
+                                                <div class="time_is_out">
+                                                    завершен
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="Borodist"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">Borodist</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member_tabs_item" data-tab="3">
+                        <div class="contests__materials">
+                            <div class="row">
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#222">
+                                        <a href="javascript:void(0);" class="contest__link">
+                                                <span class="contest__desc">
+                                                    Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                                                    Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                                                    получи набор косметики от Borodist. Выберем самых ...
+                                                </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/borodist.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_cosmetic  ">Косметика</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_gift"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__in js-clickstagram"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__mo js-clickre"
+                                                           data-toggle="tooltip"
+                                                           title="И ещё 4 условия">
+                                                            ...
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Новогодний <nobr>конкурс-розыгрыш</nobr>!</h5>
+                                            <div class="contest__progress contest__progress_hot" data-days="0.001">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="Borodist"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">Borodist</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#C9D4CE">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#0d0d0d">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 p10">
+                                    <div class="contest__item contest__item_lg" data-bg="#3D0F0F">
+                                        <a href="javascript:void(0);" class="contest__link">
+                        <span class="contest__desc">
+                            Сфоткай бороду в новогоднем стиле, и получи набор косметики от Borodist.
+                            Выберем самых креативных. Сфоткай бороду в новогоднем стиле, и
+                            получи набор косметики от Borodist. Выберем самых ...
+                        </span>
+                                        </a>
+                                        <div class="contest__img">
+                                            <img src="./img/contests/ud.jpg"
+                                                 alt="">
+                                        </div>
+                                        <header class="clearfix">
+                                            <a href="javascript:void(0);" class="contest__badge contest__badge_auto  ">Aвто</a>
+                                            <a href="javascript:void(0);"
+                                               class="contest__category js-click"
+                                               data-toggle="tooltip"
+                                               title="Tooltip on top">
+                                                <i class="icon icon_medal"></i>
+                                            </a>
+                                            <div class="contest__terms">
+                                                <ul class="nav nav_inline">
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__fb js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_fb"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="javascript:void(0)"
+                                                           class="terms__vk js-click"
+                                                           data-toggle="tooltip"
+                                                           title="Подпишись на группу">
+                                                            <i class="icon icon_vk"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="contest__content clearfix">
+                                            <h5 class="contest__title">Косметика pin-up для волос</h5>
+                                            <div class="contest__progress" data-days="0.002">
+                                                <div class="progressbar"></div>
+                                                <div class="time">
+                                                    03:24:05
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer>
+                                            <div class="contest__avatar">
+                                                <a href="javascript:void(0)"
+                                                   data-toggle="tooltip"
+                                                   data-header="img/avatars/borodist__header.jpg"
+                                                   data-rating="1 520"
+                                                   data-name="UD"
+                                                   data-confirm="1"
+                                                   title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..."
+                                                   class="contest-avatar__img js-click">
+                                                    <img src="./img/avatars/ud.png" alt="">
+                                                </a>
+                                                <span class="contest-avatar__txt">
+                                <span>Организатор</span>
+                                <span class="h5">UD</span>
+                            </span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member_tabs_additional">
+                    <div class="mt_a_item" data-tab="4">
+                        <div class="cont_prizes_list">
+                            <div class="newcontent newcontent_prize">
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                                <div class="newcontent_prize-card">
+                                    <div class="image">
+                                        <img src="img/contests/borodist.jpg" alt="">
+                                    </div>
+                                    <div class="title">Масло для бороды «IRISH WHISKEY»</div>
+                                    <div class="num">1 шт</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more more_materials">
+                            <button class="btn btn_default btn_lg js-click" type="button">Показать еще</button>
+                        </div>
+                    </div>
+                    <div class="mt_a_item" data-tab="5">
+                        <div class="col-xs-4 p10">
+                            <div class="organizers__item">
+                                <a href="javascript:void(0);" class="organizers__badge organizers__badge_cosmetic">Косметика</a>
+                                <div class="organizers__img organizers__img_i">
+                                    <a href="#">
+                                        <img src="./img/contests/borodist.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__avatar">
+                                    <a href="#">
+                                        <img src="./img/avatars/borodist.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__name confirm">
+                                    <a href="#">
+                                        <span>Borodist</span>
+                                    </a>
+                                </div>
+                                <div class="organizers__rating organizers__rating_positive">
+                                    <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                    <span class="quantity">
+                                1 520
+                                <span>рейтинг</span>
+                            </span>
+                                    <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                </div>
+                                <div class="organizers__desc">
+                                    Популярный российский бренд, который производит средства для девушек в
+                                    стиле пин-ап ...
+                                </div>
+                                <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 p10">
+                            <div class="organizers__item">
+                                <a href="javascript:void(0);" class="organizers__badge organizers__badge_auto">Авто</a>
+                                <div class="organizers__img organizers__img_i">
+                                    <a href="#">
+                                        <img src="./img/contests/swisstouch.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__avatar">
+                                    <a href="#">
+                                        <img src="./img/avatars/swisstouch.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__name confirm">
+                                    <a href="#">
+                                        <span>Swisstouch</span>
+                                    </a>
+                                </div>
+                                <div class="organizers__rating">
+                                    <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                    <span class="quantity">
+                                0
+                                <span>рейтинг</span>
+                            </span>
+                                    <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                </div>
+                                <div class="organizers__desc">
+                                    Популярный российский бренд, который производит средства для девушек в
+                                    стиле пин-ап ...
+                                </div>
+                                <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 p10">
+                            <div class="organizers__item">
+                                <div class="organizers__img organizers__img_i">
+                                    <a href="#">
+                                        <img src="./img/contests/semia.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__avatar">
+                                    <a href="#">
+                                        <img src="./img/avatars/semia.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="organizers__name confirm">
+                                    <a href="#">
+                                        <span>Моя семья</span>
+                                    </a>
+                                </div>
+                                <div class="organizers__rating organizers__rating_negative">
+                                    <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                    <span class="quantity">
+                                - 2
+                                <span>рейтинг</span>
+                            </span>
+                                    <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                </div>
+                                <div class="organizers__desc">
+                                    Популярный российский бренд, который производит средства для девушек в
+                                    стиле пин-ап ...
+                                </div>
+                                <div class="organizers__contests-complite">Проведено 10 конкурсов</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt_a_item" data-tab="6">
+                        <div class="round_box">
+                            <div class="comments_list">
+                                <div class="comments__item">
+                                    <div class="comments__wrapper">
+                                        <div class="comments__content comments__content_i">
+                                            <div class="comments__data">
+                                                <header>
+                                                    <a href="javascript:void(0)" class="comments__contest"><span class="contest_ico"></span>Новогодний конкурс для бородачей</a>
+
+                                                    <div class="comments__date">4 июня в 20:46</div>
+                                                </header>
+                                                <div class="comments__text">
+                                                    <p>Добрый день, Екатерина! Хотелось бы узнать Ваше мнение по поводу целесообразности и
+                                                        оправданности проведения конкурса на странице группы. Можно с Вами пообщаться на эту
+                                                        тему? Заранее благодарю )</p>
+                                                </div>
+                                            </div>
+                                            <div class="comments__likes">
+                                                <a href="javascript:void(0)" class="comments__like">
+                                                    <i class="icon icon_like"></i>
+                                                    <span>0</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="comments__dislike">
+                                                    <i class="icon icon_dislike"></i>
+                                                    <span>0</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comments__item">
+                                    <div class="comments__wrapper">
+                                        <div class="comments__content comments__content_i">
+                                            <div class="comments__data">
+                                                <header>
+                                                    <a href="javascript:void(0)" class="comments__contest"><span class="contest_ico"></span>Новогодний конкурс для бородачей</a>
+
+                                                    <div class="comments__date">4 июня в 20:46</div>
+                                                </header>
+                                                <div class="comments__text">
+                                                    <p>Добрый день, Екатерина! Хотелось бы узнать Ваше мнение по поводу целесообразности и
+                                                        оправданности проведения конкурса на странице группы. Можно с Вами пообщаться на эту
+                                                        тему? Заранее благодарю )</p>
+                                                </div>
+                                            </div>
+                                            <div class="comments__likes">
+                                                <a href="javascript:void(0)" class="comments__like">
+                                                    <i class="icon icon_like"></i>
+                                                    <span>0</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="comments__dislike">
+                                                    <i class="icon icon_dislike"></i>
+                                                    <span>0</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comments__item">
+                                    <div class="comments__wrapper">
+                                        <div class="comments__content comments__content_i">
+                                            <div class="comments__data">
+                                                <header>
+                                                    <a href="javascript:void(0)" class="comments__contest"><span class="contest_ico"></span>Новогодний конкурс для бородачей</a>
+
+                                                    <div class="comments__date">4 июня в 20:46</div>
+                                                </header>
+                                                <div class="comments__text">
+                                                    <p>Добрый день, Екатерина! Хотелось бы узнать Ваше мнение по поводу целесообразности и
+                                                        оправданности проведения конкурса на странице группы. Можно с Вами пообщаться на эту
+                                                        тему? Заранее благодарю )</p>
+                                                </div>
+                                            </div>
+                                            <div class="comments__likes">
+                                                <a href="javascript:void(0)" class="comments__like">
+                                                    <i class="icon icon_like"></i>
+                                                    <span>0</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="comments__dislike">
+                                                    <i class="icon icon_dislike"></i>
+                                                    <span>0</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comments__item">
+                                    <div class="comments__wrapper">
+                                        <div class="comments__content comments__content_i">
+                                            <div class="comments__data">
+                                                <header>
+                                                    <a href="javascript:void(0)" class="comments__contest"><span class="contest_ico"></span>Новогодний конкурс для бородачей</a>
+
+                                                    <div class="comments__date">4 июня в 20:46</div>
+                                                </header>
+                                                <div class="comments__text">
+                                                    <p>Добрый день, Екатерина! Хотелось бы узнать Ваше мнение по поводу целесообразности и
+                                                        оправданности проведения конкурса на странице группы. Можно с Вами пообщаться на эту
+                                                        тему? Заранее благодарю )</p>
+                                                </div>
+                                            </div>
+                                            <div class="comments__likes">
+                                                <a href="javascript:void(0)" class="comments__like">
+                                                    <i class="icon icon_like"></i>
+                                                    <span>0</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="comments__dislike">
+                                                    <i class="icon icon_dislike"></i>
+                                                    <span>0</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comments__item">
+                                    <div class="comments__wrapper">
+                                        <div class="comments__content comments__content_i">
+                                            <div class="comments__data">
+                                                <header>
+                                                    <a href="javascript:void(0)" class="comments__contest"><span class="contest_ico"></span>Новогодний конкурс для бородачей</a>
+
+                                                    <div class="comments__date">4 июня в 20:46</div>
+                                                </header>
+                                                <div class="comments__text">
+                                                    <p>Добрый день, Екатерина! Хотелось бы узнать Ваше мнение по поводу целесообразности и
+                                                        оправданности проведения конкурса на странице группы. Можно с Вами пообщаться на эту
+                                                        тему? Заранее благодарю )</p>
+                                                </div>
+                                            </div>
+                                            <div class="comments__likes">
+                                                <a href="javascript:void(0)" class="comments__like">
+                                                    <i class="icon icon_like"></i>
+                                                    <span>0</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="comments__dislike">
+                                                    <i class="icon icon_dislike"></i>
+                                                    <span>0</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt_a_item" data-tab="7">
+                        <div class="round_box">
+                            <div class="compl_empty">
+                                <div class="empty_box_ico">
+                                    <span class="empty_box_"></span>
+                                </div>
+                                <div class="empty_box_text">
+                                    Жалоб нет
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <a href="javascript:void(0);" class="footer__toplink js-click">
+            <i class="icon icon_arrow"></i>
+        </a>
+        <nav class="footer__menu">
+            <ul class="nav nav_inline">
+                <li class="nav__item">
+                    <a href="javascript:void(0)">О проекте</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Брендинг</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Политика конфиденциальности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Условия использования</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__copyright">
+            &copy; 2018 PromoRound. Все права защищены.
+        </div>
+    </div>
+</footer>
+<div class="pp pp_login" data-pp="login">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Вход</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>У вас еще нет аккаунта? </p>
+                <a href="javascript:void(0);" class="pp_" data-pp="reg">Создать аккаунт</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <div class="form__row">
+                        <div class="checkbox checkbox_check">
+                            <input type="checkbox" class="checkbox__input" checked="" id="form__remember">
+                            <label for="form__remember">Запомнить меня</label>
+                        </div>
+                        <div class="pp__forgot">
+                            <a class="pp_" data-pp="recov" href="javascript:void(0);">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn_danger btn_enter">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_reg" data-pp="reg">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Регистрация</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>Уже есть аккаунт?</p>
+                <a href="javascript:void(0);" class="pp_" data-pp="login">Войти</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Введите ваш пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Повторите ваш пароль">
+                        <div class="pp__message pp__message_error">Неверный пароль</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_reg">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_recov" data-pp="recov">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Восстановление<br>пароля</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>После заполнения формы мы отправим специальную ссылку на указанный электронный адрес, перейдя по которой вы сможете задать новый пароль</p>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_recov">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="pp__ent-reg">
+                <span class="pp__ent-part pp_" data-pp="login">Вход</span>
+                <span class="pp__ent-slash"> / </span>
+                <span class="pp__reg-part pp_" data-pp="reg">Регистрация</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pp pp_claim" data-pp="claim">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="claim">
+        <div class="claim__title">
+            <h3>Жалоба</h3>
+        </div>
+        <div class="claim__form">
+            <form action="" method="">
+                <fieldset>
+                    <div class="claim__inputs">
+                        <div class="claim__input">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="claim__input">
+                            <input type="text" placeholder="Ваш email">
+                        </div>
+                    </div>
+                    <div class="claim__textarea">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Текст жалобы"></textarea>
+                    </div>
+                    <div class="claim__button">
+                        <button type="button" class="btn btn_danger btn_claim">Отправить</button>
+                        <!--эта кнопка должна быть сабмитом-->
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="thanks">
+        <div class="claim__title thanks__title">
+            <h3>Спасибо!</h3>
+        </div>
+        <div class="thanks__text">
+            Ваша жалоба будет рассмотрена модераторами
+        </div>
+        <div class="claim__button">
+            <button type="button" class="btn btn_danger btn_thanks">закрыть</button>
+        </div>
+    </div>
+</div>
+<div class="pp pp_mask" data-pp="claim"></div>
+</body>
+</html>

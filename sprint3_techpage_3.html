@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromoRound</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_sprint3.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/customScroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+
+</head>
+<body class="">
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        //duration: 1000
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a href="javascript:void(0);" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+
+            <nav class="header__menu">
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Конкурсы
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_active">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Организаторы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Участники
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Агентства
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Помощь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn_primary header__btn header_login js-click pp_" data-pp="login">Вход</button>
+        </div>
+    </div>
+</header>
+<div class="header__slick"></div>
+<div class="wrapper wrapper_blog">
+
+
+
+    <div class="tech_section">
+        <div class="tech_section_wrap">
+            <div class="feedbacks_wrapper">
+                <div class="feedbacks_title">
+                    Отзывы организаторов
+                </div>
+                <div class="feedbacks_toggle">
+                    <div class="feedbacks_toggle_item active" data-list="1">Организаторы</div>
+                    <div class="feedbacks_toggle_sep">/</div>
+                    <div class="feedbacks_toggle_item" data-list="2">Участники</div>
+                </div>
+                <div class="feedbacks_wrapper_list active owl-carousel" data-list="1">
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+                        <div class="fb_item_text_more">
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="fb_item_bottom">
+                            <a href="#"><div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <img src="img/feedbacks/ava.jpg" alt=""/>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <div class="fb_item_bottom_author_name">Давид Шевченко</div>
+                                    <div class="fb_item_bottom_author_sub">основатель Borodist</div>
+                                </div>
+                            </div></a>
+
+                            <a href="#"><div class="fb_item_bottom_company">
+                                <img src="img/feedbacks/logo.png" alt=""/>
+                            </div></a>
+                        </div>
+                    </div>
+
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+
+                        <div class="fb_item_bottom">
+                            <a href="#"><div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <img src="img/feedbacks/ava.jpg" alt=""/>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <div class="fb_item_bottom_author_name">Давид Шевченко</div>
+                                    <div class="fb_item_bottom_author_sub">основатель Borodist</div>
+                                </div>
+                            </div></a>
+
+                            <a href="#"><div class="fb_item_bottom_company">
+                                <img src="img/feedbacks/logo.png" alt=""/>
+                            </div></a>
+                        </div>
+                    </div>
+
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+
+                        <div class="fb_item_bottom">
+                            <a href="#"><div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <img src="img/feedbacks/ava.jpg" alt=""/>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <div class="fb_item_bottom_author_name">Давид Шевченко</div>
+                                    <div class="fb_item_bottom_author_sub">основатель Borodist</div>
+                                </div>
+                            </div></a>
+
+                            <a href="#"><div class="fb_item_bottom_company">
+                                <img src="img/feedbacks/logo.png" alt=""/>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbacks_wrapper_list owl-carousel" data-list="2">
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+                        <div class="fb_item_text_more">
+                            <a href="#">Подробнее</a>
+                        </div>
+
+                        <div class="fb_item_bottom">
+                            <div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <a href="#"> <img src="img/feedbacks/ava.jpg" alt=""/></a>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <a href="#"><div class="fb_item_bottom_author_name">Давид Шевченко</div></a>
+                                    <a href="#"><div class="fb_item_bottom_author_comp">
+                                        <span class="fb_item_bottom_author_comp_ico">
+                                            <img src="img/feedbacks/icon.svg" alt=""/>
+                                        </span>
+                                        <span class="fb_item_bottom_author_comp_title">
+                                            Откройте для себя Италию с моцареллой Galbani
+                                        </span>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+                        <div class="fb_item_text_more">
+                            <a href="#">Подробнее</a>
+                        </div>
+
+                        <div class="fb_item_bottom">
+                            <div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <a href="#"> <img src="img/feedbacks/ava.jpg" alt=""/></a>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <a href="#"><div class="fb_item_bottom_author_name">Давид Шевченко</div></a>
+                                    <a href="#"><div class="fb_item_bottom_author_comp">
+                                        <span class="fb_item_bottom_author_comp_ico">
+                                            <img src="img/feedbacks/icon.svg" alt=""/>
+                                        </span>
+                                        <span class="fb_item_bottom_author_comp_title">
+                                            Откройте для себя Италию с моцареллой Galbani
+                                        </span>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fb_item">
+                        <div class="fb_item_text">
+                            Рейтинг позволяет "в один клик" получить сведения о веб-студиях;
+                            проектах, реализованных ими ранее, а главное, о стоимости услуг
+                            на разработку, сокращая тем самым временные затраты менеджера
+                            на стороне клиента».
+                        </div>
+                        <div class="fb_item_text_more">
+                            <a href="#">Подробнее</a>
+                        </div>
+
+                        <div class="fb_item_bottom">
+                            <div class="fb_item_bottom_author">
+                                <div class="fb_item_bottom_author_ava">
+                                    <a href="#"> <img src="img/feedbacks/ava.jpg" alt=""/></a>
+                                </div>
+                                <div class="fb_item_bottom_author_text">
+                                    <a href="#"><div class="fb_item_bottom_author_name">Давид Шевченко</div></a>
+                                    <a href="#"><div class="fb_item_bottom_author_comp">
+                                        <span class="fb_item_bottom_author_comp_ico">
+                                            <img src="img/feedbacks/icon.svg" alt=""/>
+                                        </span>
+                                        <span class="fb_item_bottom_author_comp_title">
+                                            Откройте для себя Италию с моцареллой Galbani
+                                        </span>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="feedbacks_add">
+                    <a href="#" class="btn btn_grey">Оставить отзыв</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tech_section">
+        <div class="tech_section_wrap">
+            <h1>Призы - состояния</h1>
+            <h2>При создании конкурса</h2>
+            <div class="prizes_list">
+                <div class="prizes_list_item">
+                    <span class="prizes_list_item_remove"></span>
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage_link">
+                        <div class="prizes_list_item_stage_link_title">Привязать к этапу</div>
+                        <div class="select_box">
+                            <select class="select" name="prize_stage">
+                                <option>1 этап</option>
+                                <option>2 этап</option>
+                                <option>3 этап</option>
+                                <option>4 этап</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="prizes_list_item_place_link">
+                        <div class="prizes_list_item_stage_link_title">Привязать к месту</div>
+                        <div class="select_box">
+                            <select class="select" name="prize_stage">
+                                <option>1 место</option>
+                                <option>2 место</option>
+                                <option>3 место</option>
+                                <option>4 место</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="prizes_list_item">
+                    <span class="prizes_list_item_remove"></span>
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Масло для бороды «IRISH WHISKEY» special edition(физический)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage_link">
+                        <div class="prizes_list_item_stage_link_title">Привязать к этапу</div>
+                        <div class="select_box">
+                            <select class="select" name="prize_stage">
+                                <option>1 этап</option>
+                                <option>2 этап</option>
+                                <option>3 этап</option>
+                                <option>4 этап</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="prizes_list_item_place_link">
+                        <div class="prizes_list_item_stage_link_title">Привязать к месту</div>
+                        <div class="select_box">
+                            <select class="select" name="prize_stage">
+                                <option>1 место</option>
+                                <option>2 место</option>
+                                <option>3 место</option>
+                                <option>4 место</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <h3>На странице конкурса - Если призы привязаны к этапам</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап, итоги через</div>
+                        <div class="prizes_list_item_stage_timer"> 03:24:05 </div>
+                    </div>
+
+
+                </div>
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап, итоги через</div>
+                        <div class="prizes_list_item_stage_timer">3 дня</div>
+                    </div>
+
+
+                </div>
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап</div>
+                        <div class="prizes_list_item_stage_timer prizes_list_item_stage_timer_over">завершен</div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">Осталось 5 шт</div>
+                        <div class="prizes_list_item_stage_timer">03:24:05</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <h3>Без этапов - у них нет таймера, таймер только у конкурса</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item prizes_list_item_no_additional_info" >
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+                </div>
+
+                <div class="prizes_list_item prizes_list_item_no_additional_info">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+                </div>
+
+
+            </div>
+
+
+
+            <h3> Если призы привязаны к этапам и местам</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item" >
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап, итоги через</div>
+                        <div class="prizes_list_item_stage_timer">03:24:05</div>
+                    </div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1 место</div>
+                    </div>
+                </div>
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап, итоги через</div>
+                        <div class="prizes_list_item_stage_timer">03:24:05</div>
+                    </div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1-10 место</div>
+                    </div>
+                </div>
+
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_title">1 этап</div>
+                        <div class="prizes_list_item_stage_timer prizes_list_item_stage_timer_over">завершен</div>
+                    </div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1-10 место</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h3>Если призы привязаны к местам</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item" >
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1 место</div>
+                    </div>
+                </div>
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1-10 место</div>
+                    </div>
+                </div>
+
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_timer prizes_list_item_stage_timer_over">завершен</div>
+                    </div>
+
+                    <div class="prizes_list_item_stage prizes_list_item_stage_i">
+                        <div class="prizes_list_item_stage_place">1-10 место</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <h3>Если выиграл</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item" >
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+                    <div class="prizes_list_item_stage_button">
+                        <a href="#" class="btn btn_danger">просмотр</a>
+                    </div>
+                </div>
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+
+                    <div class="prizes_list_item_stage_button">
+                        <a href="#" class="btn btn_danger">получить</a>
+                    </div>
+                </div>
+
+
+                <div class="prizes_list_item">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+
+
+                    <div class="prizes_list_item_stage_button">
+                        <a href="#" class="btn btn_danger">получить</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h3>Если не выиграл</h3>
+            <div class="prizes_list">
+                <div class="prizes_list_item prizes_list_item_no_additional_info" >
+                    <div class="prizes_list_item_image" style="background: linear-gradient(180deg, #ff7b7b 0%, rgb(0, 114, 255) 100%);">
+                        <span class="prizes_list_item_image_lock"></span>
+                    </div>
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+                </div>
+
+                <div class="prizes_list_item prizes_list_item_no_additional_info">
+                    <div class="prizes_list_item_image">
+                        <img src="img/create_contest/prize_photo_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="prizes_list_item_title">Видео-урок по каллиграфии BrushPen(цифровые)</div>
+                    <div class="prizes_list_item_count">100шт</div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <a href="javascript:void(0);" class="footer__toplink js-click">
+            <i class="icon icon_arrow"></i>
+        </a>
+        <nav class="footer__menu">
+            <ul class="nav nav_inline">
+                <li class="nav__item">
+                    <a href="javascript:void(0)">О проекте</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Брендинг</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Политика конфиденциальности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Условия использования</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__copyright">
+            &copy; 2018 PromoRound. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<div class="pp pp_login" data-pp="login">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Вход</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>У вас еще нет аккаунта? </p>
+                <a href="javascript:void(0);" class="pp_" data-pp="reg">Создать аккаунт</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <div class="form__row">
+                        <div class="checkbox checkbox_check">
+                            <input type="checkbox" class="checkbox__input" checked="" id="form__remember">
+                            <label for="form__remember">Запомнить меня</label>
+                        </div>
+                        <div class="pp__forgot">
+                            <a class="pp_" data-pp="recov" href="javascript:void(0);">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn_danger btn_enter">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_reg" data-pp="reg">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Регистрация</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>Уже есть аккаунт?</p>
+                <a href="javascript:void(0);" class="pp_" data-pp="login">Войти</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Введите ваш пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Повторите ваш пароль">
+                        <div class="pp__message pp__message_error">Неверный пароль</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_reg">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_recov" data-pp="recov">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Восстановление<br>пароля</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>После заполнения формы мы отправим специальную ссылку на указанный электронный адрес, перейдя по которой вы сможете задать новый пароль</p>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_recov">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="pp__ent-reg">
+                <span class="pp__ent-part pp_" data-pp="login">Вход</span>
+                <span class="pp__ent-slash"> / </span>
+                <span class="pp__reg-part pp_" data-pp="reg">Регистрация</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromoRound</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/customScroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+
+</head>
+<body class="user_auth">
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        //duration: 1000
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <a href="javascript:void(0);" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Конкурсы
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_active">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Организаторы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Участники
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Агентства
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Помощь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-user__btn">
+                    <a href="#">
+                        <button type="button" class="btn btn_danger">+ Создать конкурс</button>
+                    </a>
+                </div>
+                <div class="header-user__mail">
+                    <div class="header-user__mail-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__notif">
+                    <div class="header-user__notif-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__avatar">
+                    <img src="img/users/h-user.png" alt="">
+
+                    <div class="header-header_menu">
+                        <div class="header_usermenu_inner">
+                            <a href="#">Профиль</a>
+                            <a href="#">Редактировать</a>
+                            <a href="#" class="header_usermenu_quit">
+                                Выход <span class="quit_ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="create-head">
+        <div class="create-head__cont">
+            <div class="create-head__items">
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>тарифы</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>настройки</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>статистика</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header__slick"></div>
+<div class="wrapper wrapper_members-page">
+    <div class="member-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="member-page__info">
+                        <div class="member-page__avatar">
+                            <img src="./img/users/winner2.jpg" alt="">
+                        </div>
+                        <div class="member-page__name member-page__name_online"><span>Ирина Минькашова</span></div>
+                        <div class="member-page__city">Калининград</div>
+                        <div class="member-page__social">
+                            <ul class="nav nav_inline">
+                                <li class="nav__item">
+                                    <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                                        <i class="icon icon_fb"></i>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                                        <i class="icon icon_vk"></i>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                                        <i class="icon icon_twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                                        <i class="icon icon_ok"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member-page__points">
+                            <i class="icon icon_points"></i> <span>120</span>
+                        </div>
+    
+                        <div class="organizers__btns">
+                            <a href="#">
+                                <button type="button" class="btn btn_danger js-click">
+                                    <i class="icon icon_mail"></i>
+                                    <span><span class="hide_me">Написать</span> сообщение</span>
+                                </button>
+                            </a>
+                            <a href="javascript:void(0)" class="pp_ claim_href" data-pp="claim">
+                                <span class="circle">!</span>
+                                <span>Пожаловаться на участника</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="member_orgs">
+                        <div class="member_orgs_title">Организации</div>
+                        <div class="member_orgs_list">
+                            <div class="org_item">
+                                <div class="contest__avatar">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-header="img/avatars/borodist__header.jpg" data-rating="1 520" data-name="Borodist" data-confirm="1" title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..." class="contest-avatar__img js-click">
+                                        <img src="./img/avatars/borodist.jpg" alt="">
+                                    </a>
+                                    <span class="contest-avatar__txt">
+                                        <span class="h5">Borodist<span class="confirm_icon"></span></span>
+                                    <span class="org_count">10 конкурсов</span>
+
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="org_item">
+                                <div class="contest__avatar">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-header="img/avatars/borodist__header.jpg" data-rating="1 520" data-name="Borodist" data-confirm="1" title="Популярный российский бренд, который производит средства для девушек в стиле пин-ап ..." class="contest-avatar__img js-click">
+                                        <img src="./img/avatars/borodist.jpg" alt="">
+                                    </a>
+                                    <span class="contest-avatar__txt">
+                                        <span class="h5">Betty Berry<span class="confirm_icon"></span></span>
+                                    <span class="org_count">10 конкурсов</span>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="achievements">
+                        <div class="achievements__title">Достижения</div>
+                        <div class="achievements__list">
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                            <div data-toggle="tooltip" title="Счастливчик месяца" class="achievements__item">
+                                <i class="icon icon_shield"></i>
+                                <i class="icon icon_star"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="subscribes">
+                        <div class="subscribes__title">Подписки</div>
+                        <div class="subscribes__list">
+                            <div class="subscribes__item">
+                                <a href="javascript:void(0);">
+                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="subscribes__item">
+                                <a href="javascript:void(0);">
+                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="subscribes__item">
+                                <a href="javascript:void(0);">
+                                    <img src="./img/avatars/borodist.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9">
+                   <div class="mem_activity_nav round_box">
+                       <a href="#">
+                           <span class="back_href_arrow"></span>
+                           назад
+                       </a>
+
+                       <span class="mem_activity_counter">
+                           234 записей
+                       </span>
+                   </div>
+
+                    <div class="mem_activity_list ">
+                        <div class="mem_activity_item round_box">
+                            <div class="mem_activity_head">
+                                <span class="mem_activity_head_title">
+                                    <span class="activity_ico"><img src="img/status/1.svg" alt=""></span>
+                                    <span class="activity_item_title">Новый конкурс!</span>
+                                </span>
+
+                                <a href="#"><span class="activity_href">
+                                    <span class="contests_ico"></span>
+                                    <span class="activity_href_title">Новогодний конкурс для бородачей</span>
+                                </span></a>
+                            </div>
+                            <div class="mem_activity_bottom">
+                                <span class="mem_activity_bottom_date">4 июн в 20:46</span>
+                            </div>
+
+                        </div>
+
+                        <div class="mem_activity_item round_box">
+                            <div class="mem_activity_head">
+                                <span class="mem_activity_head_title">
+                                    <span class="activity_ico"><img src="img/status/2.svg" alt=""></span>
+                                    <span class="activity_item_title">Подведены итоги конкурса</span>
+                                </span>
+
+                                <a href="#"><span class="activity_href">
+                                    <span class="contests_ico"></span>
+                                    <span class="activity_href_title">Новогодний конкурс для бородачей</span>
+                                </span></a>
+                            </div>
+                            <div class="mem_activity_bottom">
+                                <span class="mem_activity_bottom_date">4 июн в 20:46</span>
+                            </div>
+
+                        </div>
+
+                        <div class="mem_activity_item mem_activity_status round_box">
+                            <div class="mem_activity_head">
+                                <span class="mem_activity_head_title">
+                                    <span class="activity_ico"><img src="img/status/3.svg" alt=""></span>
+                                    <span class="activity_item_title">Чтобы понять, о чем речь, представьте на секундочку, что вы разбираетесь в винах. Нет, не просто разбираетесь — вы посвятили этому много лет, следите за новинками, знаете историю известных сортов и большинство виноделов. Да что там — вы сами не раз делали вина.</span>
+                                </span>
+
+                                <span class="activity_more">
+                                    <a href="#">подробнее <span class="href_right_arrow"></span></a>
+                                </span>
+                            </div>
+                            <div class="mem_activity_bottom">
+                                <span class="mem_activity_bottom_date">4 июн в 20:46</span>
+                                <span class="mem_activity_bottom_comments">
+                                    <i class="icon icon_comment"></i>
+                                    <span>12</span>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <a href="javascript:void(0);" class="footer__toplink js-click">
+            <i class="icon icon_arrow"></i>
+        </a>
+        <nav class="footer__menu">
+            <ul class="nav nav_inline">
+                <li class="nav__item">
+                    <a href="javascript:void(0)">О проекте</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Брендинг</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Политика конфиденциальности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Условия использования</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__copyright">
+            &copy; 2018 PromoRound. Все права защищены.
+        </div>
+    </div>
+</footer>
+<div class="pp pp_login" data-pp="login">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Вход</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>У вас еще нет аккаунта? </p>
+                <a href="javascript:void(0);" class="pp_" data-pp="reg">Создать аккаунт</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <div class="form__row">
+                        <div class="checkbox checkbox_check">
+                            <input type="checkbox" class="checkbox__input" checked="" id="form__remember">
+                            <label for="form__remember">Запомнить меня</label>
+                        </div>
+                        <div class="pp__forgot">
+                            <a class="pp_" data-pp="recov" href="javascript:void(0);">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn_danger btn_enter">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_reg" data-pp="reg">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Регистрация</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>Уже есть аккаунт?</p>
+                <a href="javascript:void(0);" class="pp_" data-pp="login">Войти</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Введите ваш пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Повторите ваш пароль">
+                        <div class="pp__message pp__message_error">Неверный пароль</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_reg">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_recov" data-pp="recov">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Восстановление<br>пароля</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>После заполнения формы мы отправим специальную ссылку на указанный электронный адрес, перейдя по которой вы сможете задать новый пароль</p>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_recov">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="pp__ent-reg">
+                <span class="pp__ent-part pp_" data-pp="login">Вход</span>
+                <span class="pp__ent-slash"> / </span>
+                <span class="pp__reg-part pp_" data-pp="reg">Регистрация</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="pp pp_claim" data-pp="claim">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="claim">
+        <div class="claim__title">
+            <h3>Жалоба</h3>
+        </div>
+        <div class="claim__form">
+            <form action="" method="">
+                <fieldset>
+                    <div class="claim__inputs">
+                        <div class="claim__input">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="claim__input">
+                            <input type="text" placeholder="Ваш email">
+                        </div>
+                    </div>
+                    <div class="claim__textarea">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Текст жалобы"></textarea>
+                    </div>
+                    <div class="claim__button">
+                        <button type="button" class="btn btn_danger btn_claim">Отправить</button>
+                        <!--эта кнопка должна быть сабмитом-->
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="thanks">
+        <div class="claim__title thanks__title">
+            <h3>Спасибо!</h3>
+        </div>
+        <div class="thanks__text">
+            Ваша жалоба будет рассмотрена модераторами
+        </div>
+        <div class="claim__button">
+            <button type="button" class="btn btn_danger btn_thanks">закрыть</button>
+        </div>
+    </div>
+</div>
+<div class="pp pp_mask" data-pp="claim"></div>
+</body>
+</html>

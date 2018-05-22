@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromoRound</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/customscroll.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_sprint3.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/customScroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1r3dJyxW0PKoas2nWs-5kkY59aIdrN0&language=ru"></script>
+    <script>var markerPosition = '55.911556, 37.542486';</script>
+
+
+</head>
+<body class="user_auth">
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        //duration: 1000
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <a href="javascript:void(0);" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Конкурсы
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_active">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Организаторы
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Участники
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Агентства
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascreipt:void(0)" class="js-click">
+                            Помощь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-user__btn">
+                    <a href="#">
+                        <button type="button" class="btn btn_danger">+ Создать конкурс</button>
+                    </a>
+                </div>
+                <div class="header-user__mail">
+                    <div class="header-user__mail-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__notif">
+                    <div class="header-user__notif-num">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="header-user__avatar">
+                    <img src="img/users/h-user.png" alt="">
+
+                    <div class="header-header_menu">
+                        <div class="header_usermenu_inner">
+                            <a href="#">Профиль</a>
+                            <a href="#">Редактировать</a>
+                            <a href="#" class="header_usermenu_quit">
+                                Выход <span class="quit_ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="create-head">
+        <div class="create-head__cont">
+            <div class="create-head__items">
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>тарифы</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>настройки</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>статистика</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header__slick"></div>
+<div class="wrapper wrapper_create">
+    <div class="create-head">
+        <div class="create-head__cont">
+            <div class="create-head__items">
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>тарифы</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>настройки</span>
+                    </a>
+                </div>
+                <div class="create-head__item">
+                    <a href="#">
+                        <span>статистика</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="create-bg"></div>
+        <div class="create">
+
+                    <div class="create-blocks">
+                        <div class="create-block create-block_contacts">
+                            <div class="title">
+                                <h1>
+                                    Содание конкурса
+                                </h1>
+                            </div>
+                            <div class="text">
+                                <p>Есть уникальная идея, которую вы хотели бы реализовать, но наш функционал не позволяет?</p>
+                                <p>Нет проблем! У нас есть эксперты, которые могут рассказать вам, как выполнить свою идею с помощью Promo Round. Мы также готовы разработать и предоставить уникальный функционал для реализации.</p>
+                            </div>
+                            <div class="contacts">
+                                <div class="contacts__cont">
+                                    <div class="contacts__part contacts__phone">
+                                        <div class="contacts__title">
+                                            Позвоните нам
+                                        </div>
+                                        <div class="contacts__link">
+                                            <a href="tel:8800560560">
+                                                <span>8 800 560 560</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__part contacts__mail">
+                                        <div class="contacts__title">
+                                            Отправьте нам письмо
+                                        </div>
+                                        <div class="contacts__link">
+                                            <a href="mailto:hello@promo.com">
+                                                <span>hello@promo.com</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="create-caption">Кто автор конкурса?</h2>
+
+                            <div class="create__container">
+                                <!-- Первый выбор -->
+                                <div class="create-block__img create-block__img--first swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="create swiper-button-prev"></div>
+                                    <div class="create swiper-button-next"></div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- Второй выбор -->
+                                <div class="create-block__img create-block__img--last swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="create-img-wrapper">
+                                                <img src="./img/avatars/borodist.jpg" class="create-img" alt="" />
+                                            </div>
+                                            <footer class="create-footer">
+                                                <h3 class="create-footer-caption">Borodist</h3>
+                                                <p class="create-footer-text">Организация</p>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="create swiper-button-prev"></div>
+                                    <div class="create swiper-button-next"></div>
+                                </div>
+                                <!-- end -->
+                            </div>
+
+                        </div>
+                        <div class="create-block create-block_type" id="create-block_type">
+                            <div class="type">
+                                <div class="create__subtitle">
+                                    <h4>Выберите тип конкурса</h4>
+                                </div>
+                                <div class="type__list">
+                                    <div class="type__item">
+                                        <a href="javascript:void(0);"
+                                        class="contest__category js-click" data-pr="1">
+                                            <i class="icon icon_gift"></i>
+                                        </a>
+                                        <div class="type__title">Розыгрыш</div>
+                                        <div class="type__description">
+                                            При выполнении условий ты точно гарантируешь себе победу
+                                            (получение чего-либо). Если конечно успеешь попасть в сроки и в
+                                            ограниченное количество штук.
+                                        </div>
+                                    </div>
+                                    <div class="type__item">
+                                        <a href="javascript:void(0);"
+                                        class="contest__category js-click"  data-pr="2">
+                                            <i class="icon icon_medal"></i>
+                                        </a>
+                                        <div class="type__title">Раздача</div>
+                                        <div class="type__description">
+                                            Подразумевает в себе рандом (случайность) среди тех, кто
+                                            выполнил все условия. То есть, их выполнение ещё не гарантирует тебе
+                                            победу, тебя должен выбрать рандом или организатор
+                                        </div>
+                                    </div>
+                                    <div class="type__item">
+                                        <a href="javascript:void(0);"
+                                        class="contest__category js-click soon"  data-pr="4">
+                                            <i class="icon icon_light"></i>
+                                        </a>
+                                        <div class="type__title">Творческий</div>
+                                        <div class="type__description">
+                                            Подразумевает в себе рандом (случайность) среди тех, кто
+                                            выполнил все условия. То есть, их выполнение ещё не гарантирует тебе
+                                            победу, тебя должен выбрать рандом или организатор
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="creation_blocks">
+                            <div class="creation_block" data-pr="1">
+                                <form action="" method="">
+                                    <fieldset>
+
+                                 <div class="create-block create-block_main create-block_hide" id="create-block_main">
+                                     <div class="create-block_main__form">
+                                         <div class="photo">
+                                             <div class="create__subtitle">
+                                                 <h4>Фото-обложка</h4>
+                                             </div>
+                                             <div class="photo__cont photo_area">
+                                                 <label for="dropzone-file"> <div class="photo__drop" id="dropzone">
+                                                     <div class="photo__img"></div>
+                                                     <div class="photo__dscr">Перетащите фото или<br>выберите файл с вашего компьютера</div>
+                                                     <div class="photo__btn">
+                                                         <input type="file" id="dropzone-file"/>
+                                                         <span>Загрузить фото</span>
+                                                     </div>
+                                                 </div> </label>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <div class="info__block">
+                                                 <div class="create__subtitle create__subtitle_sm">
+                                                     <h4>Категория</h4>
+                                                 </div>
+                                                 <div class="filters__item filters__item_select">
+                                                     <select class="select" name="create-contests__category">
+                                                         <option disabled selected>Выберите категорию</option>
+                                                         <option>Косметика</option>
+                                                         <option>Авто</option>
+                                                         <option>Еда</option>
+                                                         <option>Средства ухода</option>
+                                                     </select>
+                                                 </div>
+                                             </div>
+                                             <div class="info__block">
+                                                 <div class="create__subtitle create__subtitle_sm">
+                                                     <h4>Название конкурса</h4>
+                                                 </div>
+                                                 <div class="info__name">
+                                                     <input type="text" placeholder="Введите название, например, “Новогодний розыгрыш”" id="create__name">
+                                                 </div>
+                                             </div>
+                                             <div class="info__block">
+                                                 <div class="create__subtitle create__subtitle_sm">
+                                                     <h4>Описание</h4>
+                                                 </div>
+                                                 <div class="info__dscrptn">
+                                                     <textarea placeholder="Текст описания" id="create__dscrptn"></textarea>
+                                                 </div>
+                                             </div>
+                                             <div class="info__block">
+                                                 <div class="create__subtitle create__subtitle_sm">
+                                                     <h4 class="create__quest-title">Метки</h4>
+                                                     <div class="create__quest" data-toggle="tooltip"
+                                                          title="Например: мода, iphone, коты"></div>
+                                                 </div>
+                                                 <div class="info__tags">
+                                                     <input type="text" placeholder="Введите ваши теги, через запятую" id="create__tags">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+
+
+                                        <!--CALENDAR-->
+                                        <div class="create-block create-block_date create-block_hide" id="create-block_date_new">
+                                            <div class="create__subtitle">
+                                                <h4>Дата проведения</h4>
+                                            </div>
+                                          <div class="calendar_button">
+                                              <span class="btn btn_danger">указать время проведения</span>
+                                          </div>
+                                        </div>
+                                        <!--CALENDAR END-->
+                                        <!--PRIZE-->
+
+
+                                 <div class="create-block create-block_prize create-block_hide" id="create-block_prize">
+                                     <div class="create__subtitle">
+                                         <h4>Призы</h4>
+                                     </div>
+                                     <div class="createb-btn__wrap">
+                                         <button type="button" class="btn btn_danger create-btn js-click pp_" id="create-btn_prize" data-pp="chooze_prize_type">+ добавить приз</button>
+                                     </div>
+
+                                      <div class="pp choose_prize_type" data-pp="chooze_prize_type">
+                                          <a href="javascript:void(0);" class="close"></a>
+
+                                          <div class="choose_prize_type_wrap">
+                                              <div class="pp_title">Выберите тип приза</div>
+                                              <div class="choose_prize_type_list">
+                                                  <div class="choose_prize_type_item pp_" data-pp="prize_type_physical">
+                                                      <div class="choose_prize_type_item_icon">
+
+                                                      </div>
+                                                      <div class="choose_prize_type_item_title">Физический</div>
+                                                      <div class="choose_prize_type_item_description">
+                                                          При выполнении условий ты точно гарантируешь себе победу (получение чего-либо). Если конечно успеешь попасть в сроки и в ограниченное количество штук.
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="choose_prize_type_item pp_" data-pp="prize_type_digital">
+                                                      <div class="choose_prize_type_item_icon">
+
+                                                      </div>
+                                                      <div class="choose_prize_type_item_title">Цифровой</div>
+                                                      <div class="choose_prize_type_item_description">
+                                                          При выполнении условий ты точно гарантируешь себе победу (получение чего-либо). Если конечно успеешь попасть в сроки и в ограниченное количество штук.
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                            <!--Physical prize-->
+                                            <div class="pp choose_prize_type prize_type" data-pp="prize_type_physical">
+                                                <a href="javascript:void(0);" class="close close_prize_type"></a>
+                                                <div class="prize_type_wrapper">
+                                                    <div class="prize_type_head">
+                                                        <div class="prize_type_head_back">
+                                                            <a href="#" class="pp_" data-pp="chooze_prize_type">
+                                                                <span class="pp_back_icon"></span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="prize_type_head_title">Физический</div>
+
+
+
+                                                    </div>
+
+                                                    <div class="prize_description_wrapper">
+                                                        <div class="pdw_left">
+                                                            <div class="prize_gall">
+                                                                <div class="prize_gal_title">Галерея</div>
+                                                                <div class="prize_gal_sub">
+                                                                    Вы можете прикрепить не более 6 фотографий
+                                                                </div>
+
+                                                                <div class="prize_gal_dropzone">
+                                                                    <div class="prize_photo_item">
+                                                                        <span class="prize_photo_item_remove"></span>
+                                                                        <img src="img/create_contest/prize_photo.jpg" alt=""/>
+                                                                    </div>
+                                                                    <div class="prize_photo_item active">
+                                                                        <span class="prize_photo_item_active">обложка</span>
+                                                                        <span class="prize_photo_item_remove"></span>
+                                                                        <img src="img/create_contest/prize_photo.jpg" alt=""/>
+                                                                    </div>
+                                                                    <div class="prize_photo_item">
+                                                                        <span class="prize_photo_item_remove"></span>
+                                                                        <img src="img/create_contest/prize_photo.jpg" alt=""/>
+                                                                    </div>
+                                                                    <div class="prize_photo_item">
+                                                                        <span class="prize_photo_item_remove"></span>
+                                                                        <img src="img/create_contest/prize_photo.jpg" alt=""/>
+                                                                    </div>
+                                                                    <div class="prize_add_photo_item">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="prize_counter">
+                                                                <div class="num" data-min="1" data-max="999">
+                                                                    <input type="number" value="1">
+                                                                    <div class="organizers__rating">
+                                                                        <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                                                        <span class="quantity">
+                                                                            <span class="quantity_val">1</span>
+                                                                            </span>
+                                                                        <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="prize_counter_subtitle">количество призов</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pdw_right">
+                                                            <div class="info__block">
+                                                                <div class="create__subtitle create__subtitle_sm">
+                                                                    <h4>Название</h4>
+                                                                </div>
+                                                                <div class="info__name">
+                                                                    <input type="text" placeholder="Введите название, например">
+                                                                </div>
+                                                            </div>
+                                                            <div class="info__block">
+                                                                <div class="create__subtitle create__subtitle_sm">
+                                                                    <h4>Описание</h4>
+                                                                </div>
+                                                                <div class="info__dscrptn">
+                                                                    <textarea placeholder="Текст описания"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="prize_description_save">
+                                                        <span class="btn btn_danger">сохранить</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--Physical prize end-->
+
+                                            <!--Digital prize-->
+                                            <div class="pp choose_prize_type prize_type" data-pp="prize_type_digital">
+                                                <a href="javascript:void(0);" class="close close_prize_type"></a>
+                                                <div class="prize_type_wrapper">
+                                                    <div class="prize_type_head">
+                                                        <div class="prize_type_head_back">
+                                                            <a href="#" class="pp_" data-pp="chooze_prize_type">
+                                                                <span class="pp_back_icon"></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="prize_type_head_title">Цифровой</div>
+                                                    </div>
+
+                                                    <div class="prize_description_wrapper">
+                                                        <div class="pdw_left">
+                                                           <div class="prize_image">
+                                                               <div class="prize_image_zone">
+                                                                   <div class="prize_image_zone_title">Обложка</div>
+                                                                   <div class="prize_image_zone_ico"></div>
+                                                                   <div class="prize_image_zone_text">Перетащите фото или выберите файл с вашего компьютера</div>
+                                                                   <div class="prize_image_zone_link">Загрузить фото</div>
+                                                               </div>
+                                                           </div>
+                                                            <div class="prize_counter">
+                                                                <div class="num" data-min="1" data-max="999">
+                                                                    <input type="number" value="1">
+                                                                    <div class="organizers__rating">
+                                                                        <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                                                        <span class="quantity">
+                                                                            <span class="quantity_val">1</span>
+                                                                            </span>
+                                                                        <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="prize_counter_subtitle">количество призов</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pdw_right">
+                                                            <div class="info__block">
+                                                                <div class="create__subtitle create__subtitle_sm">
+                                                                    <h4>Название</h4>
+                                                                </div>
+                                                                <div class="info__name">
+                                                                    <input type="text" placeholder="Введите название, например">
+                                                                </div>
+                                                            </div>
+                                                            <div class="info__block">
+                                                                <div class="create__subtitle create__subtitle_sm">
+                                                                    <h4>Описание</h4>
+                                                                </div>
+                                                                <div class="info__dscrptn">
+                                                                    <textarea placeholder="Текст описания"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="info__block">
+                                                                <div class="create__subtitle create__subtitle_sm">
+                                                                    <h4>Прикрепить</h4>
+                                                                </div>
+                                                                <div class="digital_types">
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_1">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type1.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Изображение</span>
+                                                                    </div>
+
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_2">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type2.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Видео</span>
+                                                                    </div>
+
+
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_3">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type3.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Аудио</span>
+                                                                    </div>
+
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_4">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type4.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Документ</span>
+                                                                    </div>
+
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_5">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type5.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Геопозиция</span>
+                                                                    </div>
+
+
+                                                                    <div class="digital_types_item pp_sub" data-pp="dig_type_6">
+                                                                        <span class="digital_types_item_ico">
+                                                                            <img src="img/create_contest/digital_type6.svg" alt=""/>
+                                                                        </span>
+                                                                        <span class="digital_types_item_title">Ключи</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="prize_description_save">
+                                                        <span class="btn btn_danger">сохранить</span>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_1">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type1.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Изображение
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Выберите файл с вашего компьютера</span>
+                                                                <span class="btn btn_grey">Выбрать файл</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or">
+                                                                <span class="pp_sub_or_val">или</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or_text">
+                                                                Укажите ссылку изображение, которое хотите загрузить для конкурса
+                                                            </div>
+                                                            <div class="pp_sub_or_input">
+                                                                <span class="pp_sub_or_input_title">Ссылка на изображение</span>
+                                                                <input type="text" placeholder="URL изображения">
+                                                            </div>
+
+
+                                                            <div class="pp_sub_reqs">
+                                                                <div class="pp_sub_reqs_item">Файл не должен превышать 200 МБ.</div>
+                                                                <div class="pp_sub_reqs_item">Поддерживаемые типы файлов: doc, docx, xls, xlsx, ppt, pptx, rtf, pdf, png, jpg, gif, psd, djvu, fb2, ps и другие.</div>
+                                                                <div class="pp_sub_reqs_item">Документ не должен нарушать авторские права.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_2">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type2.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Видео
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Выберите файл с вашего компьютера</span>
+                                                                <span class="btn btn_grey">Выбрать файл</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or">
+                                                                <span class="pp_sub_or_val">или</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or_text">
+                                                                Укажите ссылку на страницу видеозаписи на таких сайтах, как Youtube, Rutube, Vimeo и др.
+                                                            </div>
+                                                            <div class="pp_sub_or_input">
+                                                                <span class="pp_sub_or_input_title">Ссылка на видео</span>
+                                                                <input type="text" placeholder="URL видео">
+                                                            </div>
+
+
+                                                            <div class="pp_sub_reqs">
+                                                                <div class="pp_sub_reqs_item">Файл не должен превышать 200 МБ.</div>
+                                                                <div class="pp_sub_reqs_item">Поддерживаемые типы файлов: doc, docx, xls, xlsx, ppt, pptx, rtf, pdf, png, jpg, gif, psd, djvu, fb2, ps и другие.</div>
+                                                                <div class="pp_sub_reqs_item">Документ не должен нарушать авторские права.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_3">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type3.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Аудио
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Выберите файл с вашего компьютера</span>
+                                                                <span class="btn btn_grey">Выбрать файл</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or">
+                                                                <span class="pp_sub_or_val">или</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or_text">
+                                                                Укажите ссылку на страницу с аудио на таких сайтах, как SoundCloud
+                                                            </div>
+                                                            <div class="pp_sub_or_input">
+                                                                <span class="pp_sub_or_input_title">Ссылка на аудио</span>
+                                                                <input type="text" placeholder="URL аудио">
+                                                            </div>
+
+
+                                                            <div class="pp_sub_reqs">
+                                                                <div class="pp_sub_reqs_item">Файл не должен превышать 200 МБ.</div>
+                                                                <div class="pp_sub_reqs_item">Поддерживаемые типы файлов: doc, docx, xls, xlsx, ppt, pptx, rtf, pdf, png, jpg, gif, psd, djvu, fb2, ps и другие.</div>
+                                                                <div class="pp_sub_reqs_item">Документ не должен нарушать авторские права.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_4">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type4.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Документ
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Выберите файл с вашего компьютера</span>
+                                                                <span class="btn btn_grey">Выбрать файл</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or">
+                                                                <span class="pp_sub_or_val">или</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or_text">
+                                                                Укажите ссылку на страницу c документом
+                                                            </div>
+                                                            <div class="pp_sub_or_input">
+                                                                <span class="pp_sub_or_input_title">Ссылка на документ</span>
+                                                                <input type="text" placeholder="URL документа">
+                                                            </div>
+
+
+                                                            <div class="pp_sub_reqs">
+                                                                <div class="pp_sub_reqs_item">Файл не должен превышать 200 МБ.</div>
+                                                                <div class="pp_sub_reqs_item">Поддерживаемые типы файлов: doc, docx, xls, xlsx, ppt, pptx, rtf, pdf, png, jpg, gif, psd, djvu, fb2, ps и другие.</div>
+                                                                <div class="pp_sub_reqs_item">Документ не должен нарушать авторские права.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_5">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type5.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Геопозиция
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Введите место или координаты</span>
+                                                                <input type="text" placeholder="Например, Россия, Нижний Новгород, ул. Русская..">
+                                                            </div>
+
+                                                            <div class="pp_sub_or">
+                                                                <span class="pp_sub_or_val">или</span>
+                                                            </div>
+
+                                                            <div class="pp_sub_or_text">
+                                                                укажите точку на карте
+                                                            </div>
+                                                            <div class="pp_sub_map">
+                                                                <div class="pp_sub_map_text">Нижний Новгород, ул. Сенная 23</div>
+                                                                <div class="prize_map" id="prize_map"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pp_sub_wrap" data-pp="dig_type_6">
+                                                        <a href="javascript:void(0);" class="close_sub"></a>
+
+                                                        <div class="pp_sub_content">
+                                                            <div class="pp_sub_title">
+                                                                <span class="pp_sub_title_icon">
+                                                                    <img src="img/create_contest/digital_type6.svg" alt="">
+                                                                </span>
+                                                                <span class="pp_sub_title_">
+                                                                    Ключи
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="pp_sub_choose_file">
+                                                                <span class="pp_sub_choose_file_text">Каждый ключ должен начинаться с новой строки.</span>
+
+                                                            </div>
+
+                                                            <div class="pp_sub_keys_area">
+                                                                <textarea class="keys_area"></textarea>
+                                                                <div class="keys_area_sub">Максимальное количество ключей - 1 000</div>
+                                                            </div>
+
+                                                            <div class="pp_sub_button">
+                                                                <button type="submit" class="btn btn_danger">Сохранить</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!--Digital prize end-->
+
+                                            <!--PRIZE END-->
+                                     <div class="pp create-pp_prize" data-pp="prize">
+                                         <a href="javascript:void(0);" class="close"></a>
+                                         <div class="photo-pp">
+                                             <div class="photo__cont photo_area">
+                                                 <label for="dropzone-pp-file"><div class="photo__drop" id="dropzone-pp">
+                                                     <div class="photo__img"></div>
+                                                     <div class="photo__dscr">Перетащите фото или<br>выберите файл с вашего компьютера</div>
+                                                     <div class="photo__btn">
+                                                         <input type="file" id="dropzone-pp-file">
+                                                         <span>Загрузить фото</span>
+                                                     </div>
+                                                 </div></label>
+                                             </div>
+                                         </div>
+                                         <div class="name">
+                                             <div class="name__title">Название</div>
+                                             <div class="name__input">
+                                                 <input type="text" placeholder="Например, “Футболка” " id="create-pp_prize">
+                                             </div>
+                                         </div>
+                                         <div class="num" data-min="1" data-max="999">
+                                             <input type="number" value="1">
+                                             <div class="organizers__rating">
+                                                 <a href="javascript:void(0)" class="js-click minus"><span></span></a>
+                                                 <span class="quantity">
+                                                     <span class="quantity_val">1</span>
+                                                <span>количество</span>
+                                                </span>
+                                                 <a href="javascript:void(0)" class="js-click plus"><span></span></a>
+                                             </div>
+                                         </div>
+                                         <div class="button">
+                                             <button type="button" class="btn btn_danger create-btn_prize-build js-click" id="create-btn_prize-build">добавить</button>
+                                         </div>
+                                     </div>
+
+                                 </div>
+                                 <div class="create-block create-block_condit create-block_hide" id="create-block_condit">
+                                     <div class="create__subtitle">
+                                         <h4>Условия участия</h4>
+                                     </div>
+                                     <div class="createb-btn__wrap">
+                                         <button type="button" class="btn btn_danger create-btn js-click pp_" id="create-btn_condit" data-pp="condit">+ добавить условие</button>
+                                     </div>
+                                     <div class="pp create-pp_prize create-pp_condit" data-pp="condit">
+                                         <a href="javascript:void(0);" class="close"></a>
+                                         <div class="condits">
+                                             <div class="condits__title">
+                                                 Условия участия
+                                                 <span class="condits__title_sub">Минимальное количество условий : 0/5</span>
+                                             </div>
+                                             <div class="social_cond_list">
+                                                 <div class="s_cond_item active" data-cond="1">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/vk.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Вконтакте(4)
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/youtube.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         YouTube
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/instagram.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Instagram
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/email.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Email
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/fb.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Facebook
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/www.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         WWW
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/tw.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Twitter
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+
+                                                 </div>
+                                                 <div class="s_cond_item" data-cond="2">
+                                                     <div class="s_cond_item_img">
+                                                         <img src="img/cond/other.svg" alt=""/>
+                                                     </div>
+                                                     <div class="s_cond_item_title">
+                                                         Custom
+                                                     </div>
+                                                     <div class="s_cond_item_check">
+                                                         <span class="s_cond_item_check_ico"></span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+
+                                             <div class="cond_block" data-cond="1">
+                                                 <a href="javascript:void(0);" class="close_i js-close_cond_block"></a>
+                                                 <div class="cond_block_title">
+                                                     <span class="cond_block_title_image">
+                                                         <img src="img/cond/vk.svg" alt=""/>
+                                                     </span>
+                                                     <span class="cond_block_title_val">Вконтакте</span>
+                                                 </div>
+
+                                                 <div class="cond_block_list">
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Подписаться на страницу
+                                                         </div>
+
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Поставить лайк
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Оставить комментарий
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Сделать репост
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+
+                                                 <div class="cond_block_buttons">
+                                                     <button type="button" class="btn btn_grey js-click js-btn_cond_back">
+                                                         <span class="btn_back_ico"></span>
+                                                         назад
+                                                     </button>
+                                                     <button class="btn btn_danger js-btn_cond_save js-click">сохранить</button>
+                                                 </div>
+                                             </div>
+                                             <div class="cond_block" data-cond="2">
+                                                 <a href="javascript:void(0);" class="close_i js-close_cond_block"></a>
+                                                 <div class="cond_block_title">
+                                                     <span class="cond_block_title_image">
+                                                         <img src="img/cond/fb.svg" alt=""/>
+                                                     </span>
+                                                     <span class="cond_block_title_val">Facebook</span>
+                                                 </div>
+
+                                                 <div class="cond_block_list">
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Подписаться на страницу
+                                                         </div>
+
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Поставить лайк
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Оставить комментарий
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+
+                                                     <div class="cond_block_list_item">
+                                                         <div class="cond_block_list_item_check">
+                                                             <span class="cbl_check"></span>
+                                                         </div>
+                                                         <div class="cond_block_list_item_title">
+                                                             Сделать репост
+                                                         </div>
+                                                         <div class="cond_block_list_spoiler">
+                                                             <div class="cond_block_list_spoiler_input">
+                                                                 <input class="txt_i" type="text" value="" placeholder="Введите сылку на страницу">
+                                                             </div>
+                                                             <div class="cond_block_list_spoiler_req">
+                                                                 <span class="cond_block_list_spoiler_title">Обязательное условие?</span>
+                                                                 <div class="cond_block_list_spoiler_req_select">
+                                                                     <select class="select" name="condition_req">
+                                                                         <option>Нет</option>
+                                                                         <option>Да</option>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+
+                                                 <div class="cond_block_buttons">
+                                                     <button type="button" class="btn btn_grey js-click js-btn_cond_back">
+                                                         <span class="btn_back_ico"></span>
+                                                         назад
+                                                     </button>
+                                                     <button class="btn btn_danger js-btn_cond_save js-click">сохранить</button>
+                                                 </div>
+                                             </div>
+                                             <div class="condits_bottom">
+                                                 <span class="condits_bottom_count">
+                                                     Выбрано 2 условия
+                                                 </span>
+                                                 <div class="condits_bottom_button">
+                                                     <button class="btn btn_danger js-click">Сохранить</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <!--div class="newcontent newcontent_condit">
+                                         <div class="newcontent_condit__cards">
+                                             <div class="newcontent_condit-card">
+                                                 <a href="javascript:void(0);" class="close"></a>
+                                                 <div class="image">
+                                                     <img src="img/contests/borodist.jpg" alt="">
+                                                 </div>
+                                                 <div class="title">
+                                                     <span>Масло для бороды «IRISH WHISKEY»</span>
+                                                 </div>
+                                                 <div class="edit pp_" data-pp="condit-1"></div>
+                                             </div>
+                                             <div class="newcontent_condit-card">
+                                                 <a href="javascript:void(0);" class="close"></a>
+                                                 <div class="image">
+                                                     <img src="img/contests/borodist.jpg" alt="">
+                                                 </div>
+                                                 <div class="title">
+                                                     <span>Масло для бороды «IRISH WHISKEY»</span>
+                                                 </div>
+                                                 <div class="edit pp_" data-pp="condit-1"></div>
+                                             </div>
+                                         </div>
+                                     </div-->
+                                 </div>
+                                 <div class="create-block create-block_date create-block_hide" id="create-block_date">
+                                     <div class="create__subtitle">
+                                         <h4>Дата проведения</h4>
+                                     </div>
+                                     <div class="date">
+                                         <div class="date__sides">
+                                             <div class="date__side">
+                                                 <div class="create__subtitle">
+                                                     <h4>старт</h4>
+                                                 </div>
+                                                 <div class="date__input">
+                                                     <input type="text" placeholder="дата начала" value="" id="datepicker1" >
+                                                 </div>
+                                             </div>
+                                             <div class="date__side">
+                                                 <div class="create__subtitle">
+                                                     <h4>окончание</h4>
+                                                 </div>
+                                                 <div class="date__input">
+                                                     <input type="text" placeholder="дата окончания" value="" id="datepicker2" >
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="date__duration">
+                                             Продолжительность: 1 день
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="create-block create-block_limits create-block_hide" id="create-block_limits">
+                                            <div class="create__subtitle">
+                                                <h4>Ограничения</h4>
+                                            </div>
+                                            <div class="createb-btn__wrap">
+                                                <button type="button" class="btn btn_danger create-btn js-click pp_" id="create-btn_limit" data-pp="limits">+ добавить ограничения</button>
+                                            </div>
+                                            <div class="pp create-pp_prize create-pp_condit" data-pp="limits">
+                                                <a href="javascript:void(0);" class="close"></a>
+                                                <div class="condits">
+                                                    <div class="condits__title">
+                                                        Выберите ограничения
+                                                        <span class="condits__title_sub">(можно несколько)</span>
+                                                    </div>
+
+                                                    <div class="limits_list">
+                                                        <div class="limits_list_inner">
+                                                            <div class="limits_list_item">
+                                                                <div class="limits_list_item_head">
+                                                                    <span class="limits_list_item_head_caret"></span>
+                                                                    <div class="limits_list_item_ico">
+                                                                <span class="limits_list_item_ico_">
+                                                                    <img src="img/create_contest/limits/geo.svg" alt="">
+                                                                </span>
+                                                                    </div>
+
+                                                                    <div class="limits_list_item_title">География</div>
+                                                                    <div class="limits_list_item_subtitle">Страна, город, местоположение</div>
+                                                                </div>
+
+
+                                                                <div class="limits_list_item_spoiler">
+                                                                    <div class="limits_list_item_spoiler_form">
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Страна
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="container tagger">
+                                                                                    <!--   class="show-results" -->
+                                                                                    <ul>
+                                                                                        <li class="input"><input type="text" /></li>
+                                                                                        <li class="results">
+                                                                                            <div class="contents">
+                                                                                                <div class="action">Create new item</div>
+                                                                                                <ul>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+
+
+                                                                                    <select multiple>
+                                                                                        <optgroup label="defaults">
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            </opt-group>
+                                                                                            <optgroup label="added">
+
+                                                                                            </optgroup>
+                                                                                    </select>
+
+                                                                                    <div class="itemPos">0</div>
+
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Города и регионы:
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="container tagger">
+                                                                                    <!--   class="show-results" -->
+                                                                                    <ul>
+                                                                                        <li class="input"><input type="text" /></li>
+                                                                                        <li class="results">
+                                                                                            <div class="contents">
+                                                                                                <div class="action">Create new item</div>
+                                                                                                <ul>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <select multiple>
+                                                                                        <optgroup label="defaults">
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            </opt-group>
+                                                                                            <optgroup label="added">
+
+                                                                                            </optgroup>
+                                                                                    </select>
+                                                                                    <div class="itemPos">0</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                За исключением:
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="container tagger">
+                                                                                    <!--   class="show-results" -->
+                                                                                    <ul>
+
+                                                                                        <li class="input"><input type="text" /></li>
+                                                                                        <li class="results">
+                                                                                            <div class="contents">
+                                                                                                <div class="action">Create new item</div>
+                                                                                                <ul>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+
+
+                                                                                    <select multiple>
+                                                                                        <optgroup label="defaults">
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            <option>Россия</option>
+                                                                                            </opt-group>
+                                                                                            <optgroup label="added">
+
+                                                                                            </optgroup>
+                                                                                    </select>
+
+                                                                                    <div class="itemPos">0</div>
+
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="limits_list_item">
+                                                                <div class="limits_list_item_head">
+                                                                    <span class="limits_list_item_head_caret"></span>
+                                                                    <div class="limits_list_item_ico">
+                                                                <span class="limits_list_item_ico_">
+                                                                    <img src="img/create_contest/limits/age.svg" alt="">
+                                                                </span>
+                                                                    </div>
+
+                                                                    <div class="limits_list_item_title">Демография</div>
+                                                                    <div class="limits_list_item_subtitle">Пол, возраст</div>
+                                                                </div>
+
+
+                                                                <div class="limits_list_item_spoiler">
+                                                                    <div class="limits_list_item_spoiler_form">
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Пол
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="filters__radio filters__radio_grey">
+                                                                                    <label class="control control--radio l2">
+                                                                                        <input type="radio" name="access-radio" checked>
+                                                                                        <div class="control__indicator"></div>
+                                                                                        <div class="filters__radio-txt">Любой</div>
+                                                                                        <div class="clear"></div>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="filters__radio filters__radio_grey">
+                                                                                    <label class="control control--radio l2">
+                                                                                        <input type="radio" name="access-radio" checked>
+                                                                                        <div class="control__indicator"></div>
+                                                                                        <div class="filters__radio-txt">Мужчины</div>
+                                                                                        <div class="clear"></div>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="filters__radio filters__radio_grey">
+                                                                                    <label class="control control--radio l2">
+                                                                                        <input type="radio" name="access-radio">
+                                                                                        <div class="control__indicator"></div>
+                                                                                        <div class="filters__radio-txt">Женщины</div>
+                                                                                        <div class="clear"></div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Возраст
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="select_wrap select_inline select_inline_50">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>От</option>
+                                                                                        <option>от 20 лет</option>
+                                                                                        <option>от 30 лет</option>
+                                                                                        <option>от 40 лет</option>
+                                                                                        <option>от 50 лет</option>
+                                                                                    </select>
+                                                                                </div>
+
+                                                                                <div class="select_wrap select_inline select_inline_50">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>До</option>
+                                                                                        <option>до 30 лет</option>
+                                                                                        <option>до 40 лет</option>
+                                                                                        <option>до 50 лет</option>
+                                                                                        <option>до 80 лет</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="limits_list_item">
+                                                                <div class="limits_list_item_head">
+                                                                    <span class="limits_list_item_head_caret"></span>
+                                                                    <div class="limits_list_item_ico">
+                                                                <span class="limits_list_item_ico_">
+                                                                    <img src="img/create_contest/limits/people.svg" alt="">
+                                                                </span>
+                                                                    </div>
+
+                                                                    <div class="limits_list_item_title">Кол-во подписчиков</div>
+                                                                    <div class="limits_list_item_subtitle">Facebook, вконтакте, instagram, youtube ...</div>
+                                                                </div>
+
+
+                                                                <div class="limits_list_item_spoiler">
+                                                                    <div class="limits_list_item_spoiler_form">
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title limits_list_item_spoiler_form_item_title_i">
+                                                                                <span class=""><img src="img/cond/fb.svg" alt=""/></span>Facebook
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="select_wrap select_inline">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>Количество</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title limits_list_item_spoiler_form_item_title_i">
+                                                                                <span class=""><img src="img/cond/vk.svg" alt=""/></span>Vkontakte
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="select_wrap select_inline">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>Количество</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title limits_list_item_spoiler_form_item_title_i">
+                                                                                <span class=""><img src="img/cond/youtube.svg" alt=""/></span>Youtube
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="select_wrap select_inline">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>Количество</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title limits_list_item_spoiler_form_item_title_i">
+                                                                                <span class=""><img src="img/cond/instagram.svg" alt=""/></span>Instagram
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <div class="select_wrap select_inline">
+                                                                                    <select class="select" name="create-contests__category">
+                                                                                        <option disabled selected>Количество</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                        <option>Более 10 000 подписчиков</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="limits_list_item">
+                                                                <div class="limits_list_item_head">
+                                                                    <span class="limits_list_item_head_caret"></span>
+                                                                    <div class="limits_list_item_ico">
+                                                                <span class="limits_list_item_ico_">
+                                                                    <img src="img/create_contest/limits/people2.svg" alt="">
+                                                                </span>
+                                                                    </div>
+
+                                                                    <div class="limits_list_item_title">Кол-во участников в конкурсе</div>
+                                                                    <div class="limits_list_item_subtitle">Минимальное, максимальное</div>
+                                                                </div>
+
+
+                                                                <div class="limits_list_item_spoiler">
+                                                                    <div class="limits_list_item_spoiler_form">
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Минимальное
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <input class="txt_i num_i" type="number" step="100" min="1" max=""/>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="limits_list_item_spoiler_form_item">
+                                                                            <div class="limits_list_item_spoiler_form_item_title">
+                                                                                Максимальное
+                                                                            </div>
+                                                                            <div class="limits_list_item_spoiler_form_item_content">
+                                                                                <input class="txt_i num_i" type="number" step="100" min="1" max=""/>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="create-block create-block_limits create-block_hide" id="create-block_jury">
+                                            <div class="create__subtitle">
+                                                <h4>Жюри конкурса</h4>
+                                            </div>
+                                            <div class="createb-btn__wrap">
+                                                <button type="button" class="btn btn_danger create-btn js-click pp_" id="create-btn_jury" data-pp="jury">+ добавить жюри</button>
+                                            </div>
+
+                                            <!--jury-->
+                                            <div class="pp choose_prize_type prize_type jury_type" data-pp="jury">
+                                                <a href="javascript:void(0);" class="close close_prize_type"></a>
+                                                <div class="prize_type_wrapper">
+                                                    <div class="prize_type_head">
+                                                        <div class="prize_type_head_title">Жюри конкурса</div>
+                                                    </div>
+                                                    <form method="" action="">
+                                                        <fieldset>
+                                                            <div class="prize_description_wrapper">
+                                                                <div class="pdw_left">
+                                                                    <div class="prize_image">
+                                                                        <div class="prize_image_zone">
+                                                                            <!--<img src="./img/kit.jpg" alt="">-->
+                                                                            <div class="prize_image_zone_ico"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pdw_right">
+                                                                    <div class="info__block">
+                                                                        <div class="create__subtitle create__subtitle_sm">
+                                                                            <h4>Имя и фамилия</h4>
+                                                                        </div>
+                                                                        <div class="info__name">
+                                                                            <input type="text" placeholder="Например, Давид Шевченко">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info__block">
+                                                                        <div class="create__subtitle create__subtitle_sm">
+                                                                            <h4>Пару слов о нем</h4>
+                                                                        </div>
+                                                                        <div class="info__dscrptn">
+                                                                            <textarea placeholder="Ваш текст"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info__block info__block_jury-link">
+                                                                        <div class="create__subtitle create__subtitle_sm">
+                                                                            <h4>Ссылка на сайт или соц.сеть </h4>
+                                                                        </div>
+                                                                        <div class="info__name">
+                                                                            <input type="text" placeholder="https://www...">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info__block_jury-button">
+                                                                        <button type="submit" class="btn btn_danger">ok</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cond_block_buttons jury_block_buttons">
+                                                                <button type="button" class="btn btn_grey js-click js-btn_cond_back">добавить еще</button>
+                                                                <button type="submit" class="btn btn_danger js-btn_cond_save js-click">сохранить</button>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                        <div class="create-block create-block_winners create-block_hide" id="create-block_winners">
+                                            <div class="create__subtitle">
+                                                <h4>Выбор победителя </h4>
+                                            </div>
+
+                                            <div class="winners">
+                                                <div class="winners__items">
+                                                    <div class="item">
+                                                        <div class="item__ico">
+                                                            <img src="./img/icon/winners-1.svg" alt="">
+                                                        </div>
+                                                        <div class="item__title">
+                                                            Автоматически с модерацией
+                                                        </div>
+                                                        <div class="item__text">
+                                                            Подразумевает в себе рандом (случайность) среди тех, кто выполнил все условия. То есть, их выполнение ещё не гарантирует тебе победу, тебя должен выбрать рандом или организатор
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item__ico">
+                                                            <img src="./img/icon/winners-2.svg" alt="">
+                                                        </div>
+                                                        <div class="item__title">
+                                                            Автоматически без модерации
+                                                        </div>
+                                                        <div class="item__text">
+                                                            Подразумевает в себе рандом (случайность) среди тех, кто выполнил все условия. То есть, их выполнение ещё не гарантирует тебе победу, тебя должен выбрать рандом или организатор
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item__ico">
+                                                            <img src="./img/icon/winners-3.svg" alt="">
+                                                        </div>
+                                                        <div class="item__title">
+                                                            Вручную
+                                                        </div>
+                                                        <div class="item__text">
+                                                            Подразумевает в себе рандом (случайность) среди тех, кто выполнил все условия. То есть, их выполнение ещё не гарантирует тебе победу, тебя должен выбрать рандом или организатор
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="create-block create-block_end create-block_hide">
+                                    <div class="end">
+                                        <div class="preview-btn__wrap">
+                                            <button type="submit" class="btn btn_danger create-btn preview-btn js-click" id="preview-btn">превью и публикация</button>
+                                        </div>
+                                        <div class="left">
+                                            <div class="left__title">
+                                                Осталось заполнить поля:
+                                            </div>
+                                            <div class="left__list">
+                                                <div class="left__item">
+                                            <span id="anc-create-block_type">
+                                                <a class="anc" href="#create-block_type">тип конкурса</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_img">
+                                                <a class="anc" href="#create-block_main">фото-обложка</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_cat">
+                                                <a class="anc" href="#create-block_main">категория</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_name">
+                                                <a class="anc" href="#create-block_main">название</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_dscrp">
+                                                <a class="anc" href="#create-block_main">описание</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_tags">
+                                                <a class="anc" href="#create-block_main">метки</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_prize">
+                                                <a class="anc" href="#create-block_prize">призы</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_condit">
+                                                <a class="anc" href="#create-block_condit">условия</a>
+                                                <span>,</span>
+                                            </span>
+                                                    <span id="anc-create-block_date">
+                                                <a class="anc" href="#create-block_date">дата</a>
+                                                <span>,</span>
+                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="creation_block" data-pr="2">
+                                Создать раздачу
+                            </div>
+
+                            <div class="creation_block" data-pr="3">
+                                Создать Limited
+                            </div>
+
+                            <div class="creation_block" data-pr="4">
+                                Создать Творческий
+                            </div>
+
+                            <div class="creation_block" data-pr="5">
+                                Создать Patreon
+                            </div>
+                        </div>
+
+                    </div>
+
+        </div>
+
+
+</div>
+
+<footer class="footer footer_white">
+    <div class="container">
+        <a href="javascript:void(0);" class="footer__toplink js-click">
+            <i class="icon icon_arrow"></i>
+        </a>
+        <nav class="footer__menu">
+            <ul class="nav nav_inline">
+                <li class="nav__item">
+                    <a href="javascript:void(0)">О проекте</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Брендинг</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Политика конфиденциальности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="javascript:void(0)">Условия использования</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__copyright">
+            &copy; 2018 PromoRound. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<div class="pp pp_login" data-pp="login">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Вход</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>У вас еще нет аккаунта? </p>
+                <a href="javascript:void(0);" class="pp_" data-pp="reg">Создать аккаунт</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <div class="form__row">
+                        <div class="checkbox checkbox_check">
+                            <input type="checkbox" class="checkbox__input" checked="" id="form__remember">
+                            <label for="form__remember">Запомнить меня</label>
+                        </div>
+                        <div class="pp__forgot">
+                            <a class="pp_" data-pp="recov" href="javascript:void(0);">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn_danger btn_enter">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_reg" data-pp="reg">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Регистрация</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>Уже есть аккаунт?</p>
+                <a href="javascript:void(0);" class="pp_" data-pp="login">Войти</a>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Введите ваш пароль">
+                        <div class="pp__message pp__message_error">Пароль содержит недопустимые символы</div>
+                    </div>
+                    <div class="sexy_input pp__input ">
+                        <input type="password" class="label_better form__control form__control_underline" placeholder="Повторите ваш пароль">
+                        <div class="pp__message pp__message_error">Неверный пароль</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_reg">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="pp__social">
+                <p>Или войдите через</p>
+                <ul class="nav nav_inline">
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="fb js-click" target="_blank">
+                            <i class="icon icon_fb"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="vk js-click" target="_blank">
+                            <i class="icon icon_vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="twitter js-click" target="_blank">
+                            <i class="icon icon_twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:void(0);" class="ok js-click" target="_blank">
+                            <i class="icon icon_ok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pp pp_recov" data-pp="recov">
+    <a href="javascript:void(0);" class="close"></a>
+    <div class="pp__circle text-center">
+        <div class="pp__title-block">
+            <h1 class="pp__title">Восстановление<br>пароля</h1>
+        </div>
+        <div class="pp__cont">
+            <div class="pp__noacc">
+                <p>После заполнения формы мы отправим специальную ссылку на указанный электронный адрес, перейдя по которой вы сможете задать новый пароль</p>
+            </div>
+            <div class="pp__form-wrap">
+                <form action="javascript:void(0);" class="pp__form">
+                    <div class="sexy_input pp__input">
+                        <input type="text" class="label_better form__control form__control_underline" placeholder="Введите ваш email">
+                        <div class="pp__message pp__message_error">Email содержит недопустимые символы</div>
+                    </div>
+                    <!-- при правильном вводе пароля к .pp__input добавляется класс .pp__input_success -->
+                    <!-- при ошибке ввода пароля к .pp__input добавляется класс .pp__input_error -->
+                    <button class="btn btn_danger btn_recov">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="pp__ent-reg">
+                <span class="pp__ent-part pp_" data-pp="login">Вход</span>
+                <span class="pp__ent-slash"> / </span>
+                <span class="pp__reg-part pp_" data-pp="reg">Регистрация</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
