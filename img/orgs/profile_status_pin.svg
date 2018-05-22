@@ -1,0 +1,26 @@
+<svg width="15" height="16" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 59.6</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-13282 -11991)">
+<g id="Group 59.6">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(13284.2 11997.3)" fill="#CBCBCB"/>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path1_stroke" transform="translate(13283 12001.1)" fill="#CBCBCB"/>
+</g>
+<g id="Vector 3">
+<use xlink:href="#path2_stroke" transform="translate(13285.4 11993.3)" fill="#CBCBCB"/>
+</g>
+<g id="Vector 4">
+<use xlink:href="#path3_stroke" transform="translate(13290.3 11992)" fill="#CBCBCB"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 7.42288 7.08284L 0.516665 -0.472289L -0.516665 0.472289L 6.38955 8.02742L 7.42288 7.08284Z"/>
+<path id="path1_stroke" d="M 3.95206 -0.472289L -0.516665 4.41632L 0.516665 5.3609L 4.98539 0.472289L 3.95206 -0.472289Z"/>
+<path id="path2_stroke" d="M 6.09372 0L 6.61039 -0.472289L 6.1482 -0.977898L 5.63272 -0.52676L 6.09372 0ZM 9.34371 3.55535L 9.90874 3.96856L 10.247 3.50601L 9.86037 3.08307L 9.34371 3.55535ZM 0.461003 5.85979L 6.55472 0.52676L 5.63272 -0.52676L -0.461003 4.80627L 0.461003 5.85979ZM 5.57706 0.472289L 8.82704 4.02764L 9.86037 3.08307L 6.61039 -0.472289L 5.57706 0.472289ZM 8.77867 3.14215L 3.90369 9.80844L 5.03376 10.6348L 9.90874 3.96856L 8.77867 3.14215Z"/>
+<path id="path3_stroke" d="M -0.516665 0.472289L 5.17081 6.69416L 6.20414 5.74958L 0.516665 -0.472289L -0.516665 0.472289Z"/>
+</defs>
+</svg>
