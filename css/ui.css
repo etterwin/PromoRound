@@ -785,20 +785,42 @@ input.ui-button::-moz-focus-inner {
     position: absolute;
     top: 0;
     left: 0;
-    display: none
+    display: none;
+    z-index: 1;
 }
 
 .ui-selectmenu-menu .ui-menu {
-    overflow: auto;
-    overflow-x: hidden;
     padding-bottom: 0;
     border-radius: 3px;
-    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    margin-top: -10px;
+    position: relative;
+    opacity: 0;
+}
+
+.ui-selectmenu-menu .ui-menu:before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+}
+
+.ui-selectmenu-menu .ui-menu:after {
+    position: absolute;
+    content: '';
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
 }
 
 .ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
@@ -828,6 +850,7 @@ input.ui-button::-moz-focus-inner {
     background: #fff;
     border-radius: 30px;
     border-color: #ebebeb;
+    z-index: 2;
 }
 
 .ui-selectmenu-icon.ui-icon {

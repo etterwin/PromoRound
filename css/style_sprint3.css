@@ -392,8 +392,17 @@ span.fb_item_bottom_author_comp_title {
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
 }
+.create .type__item:hover .contest__category {
+    filter: grayscale(0);
+    background: #D41122;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .35s ease;
+    -ms-transition: all .3s ease;
+}
 
-.create .type__item:hover {
+.create .type__item:hover,
+.create .type__item.active{
     opacity: 1;
     filter: grayscale(0);
     -webkit-transition: all .3s ease;
@@ -1821,7 +1830,7 @@ td.ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today {
 }
 
 td.ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today a {
-    color: #e71e2f;
+    color: #FFFFFF;
     text-shadow: none;
 }
 

@@ -47,9 +47,9 @@ jQuery.fn.anim_progressbar = function (aOptions) {
 
                     // display current positions and progress
                     // $(vPb).children('.percent').html('<b>'+iPerc.toFixed(1)+'%</b>');
-                    $(vPb)
-                        .find('.time')
-                        .html('<span>'+iHours+':'+iMin+':'+iSec+'</span>');
+                    // $(vPb)
+                    //     .find('.time')
+                    //     .html('<span>'+iHours+':'+iMin+':'+iSec+'</span>');
                     $(vPb)
                         .find('.progressbar')
                         .children('.ui-progressbar-value')

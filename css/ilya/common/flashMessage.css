@@ -1,0 +1,47 @@
+.flashMessage {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    width: 600px;
+    font-size: 15px;
+    border-radius: 4px;
+    text-align: center;
+    left: 50%;
+    margin-left: -300px;
+    top: 20px;
+    padding: 15px;
+    z-index: 2000;
+}
+
+@keyframes slideDown {
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+    10%,
+    90% {
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0%,
+    100% {
+        -webkit-transform: translateY(-50px);
+    }
+    10%,
+    90% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-moz-keyframes slideDown {
+    0%,
+    100% {
+        -moz-transform: translateY(-50px);
+    }
+    10%,
+    90% {
+        -moz-transform: translateY(0px);
+    }
+}
