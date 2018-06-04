@@ -259,16 +259,22 @@
                                         <ul class="conditions">
                                             <li class="conditions__item test-animation" data-buttonid="authorize">
                                                 <a href="javascript:void(0);">
-                                                    <i class="icon icon_fb js-click"></i>
+                                                    <div class="social-icon__container">
+                                                        <i class="icon icon_fb js-click"></i>
+                                                        <span class="icon-social icon fb rss"></span>
+                                                    </div>
                                                     <span class="txt">Посети страницу на Facebook</span>
                                                     <span class="points">
                                                         <i class="icon icon_check"></i>
                                                     </span>
                                                 </a>
                                             </li>
-                                            <li class="conditions__item test-animation">
+                                            <li class="conditions__item test-animation done">
                                                 <a href="javascript:void(0);">
-                                                    <i class="icon icon_vk js-click"></i>
+                                                    <div class="social-icon__container">
+                                                        <i class="icon icon_vk js-click"></i>
+                                                        <span class="icon-social icon vk plus"></span>
+                                                    </div>
                                                     <span class="txt">Посети страницу на VK</span>
                                                     <span class="points">
                                                         +1
@@ -277,7 +283,10 @@
                                             </li>
                                             <li class="conditions__item test-animation" data-buttonid="subscribe">
                                                 <a href="javascript:void(0);">
-                                                    <i class="icon icon_instagram js-click"></i>
+                                                    <div class="social-icon__container">
+                                                        <i class="icon icon_instagram js-click"></i>
+                                                        <span class="icon-social icon inst human"></span>
+                                                    </div>
                                                     <span class="txt">Сделай селфи</span>
                                                     <span class="points">
                                                         +1
@@ -295,7 +304,10 @@
                                             </li>
                                             <li class="conditions__item test-animation">
                                                 <a href="javascript:void(0);">
-                                                    <i class="icon icon_twitter js-click"></i>
+                                                    <div class="social-icon__container">
+                                                        <i class="icon icon_twitter js-click"></i>
+                                                        <span class="icon-social icon tw refresh"></span>
+                                                    </div>
                                                     <span class="txt">Подпишись на twitter</span>
                                                     <span class="points">
                                                         +1
@@ -310,115 +322,29 @@
 
                                         <section class="contest-action__container disable authorize"
                                                  data-block="authorize">
-                                            <p class="contest-action-text">Для участия необходимо авторизоваться</p>
-                                            <div class="contest-action-btn__container">
-                                                <p class="contest-action-link open-block" data-blockid="registration">
-                                                    Войти</p>
-                                                <p class="contest-action-link open-block" data-blockid="signup">
-                                                    Зарегестрироваться</p>
+
+                                            <p class="contest-action-text">
+                                                “Wow <span class="contest-username">@gleamapp</span> is pretty impressive, testing it
+                                                out for my next <span class="contest-tag">#competition</span>“
+                                            </p>
+                                            <div class="contest-action-button-wrapper inst">
+                                                <img src="img/icon/tw-logo.svg" class="contest-action-button-icon" alt="" />
+                                                <p class="contest-action-button-text">Войти и подписаться</p>
                                             </div>
-                                        </section>
+                                            <p class="contest-action-text--small">Подключите свою учетную запись
+                                                Twitter, чтобы выполнить / подтвердить действия Twitter в 1 клик.
+                                                <br/><br/>Мы не будем публиковать сообщения без вашего разрешения.</p>
 
-                                        <section class="contest-action__container disable signup" data-block="signup">
-                                            <p class="contest-action-text">Быстрая регистрация</p>
-
-                                            <div class="checkbox checkbox_check">
-                                                <input type="checkbox" class="checkbox__input open-form"
-                                                       id="form__become-org" data-blockid="register-form">
-                                                <label for="form__become-org" class="open-form" data-blockid="register-form">
-                                                    <p>Я прочитал и согласен с правовой информацией</p>
-                                                </label>
-                                            </div>
-
-                                            <div class="contest-action__social">
-                                                <p class="contest-action-social mail open-block" data-formid="register-form"></p>
-                                                <p class="contest-action-social vk"></p>
-                                                <p class="contest-action-social fb"></p>
-                                                <p class="contest-action-social tw"></p>
-                                            </div>
-
-                                            <div class="account__box box-active">
-                                                <p class="account-text">Уже есть аккаунт?
-                                                    <span class="red open-block" data-blockid="registration">Войти</span>
-                                                </p>
-                                                <p class="account-forgot-password-btn open-block" data-blockid="forgot-password">
-                                                    Забыли пароль?</p>
-                                            </div>
-
-                                            <form class="account__box box-disable contest-action-form" method=""
-                                                  action="" data-block="register-form">
-                                                <div class="account-field-wrapper">
-                                                    <label for="reg_email" class="accounting-label mail"></label>
-                                                    <input type="email" name="registration_email" id="reg_email"
-                                                           class="accounting-field"
-                                                           placeholder="Введите ваш email"/>
+                                            <div class="contest-link__container">
+                                                <a href="https://www.figma.com/file/RtKaI0ZFnSAX7CDt8mIKElD8/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD---%D0%BF%D0%B0%D0%BA-3?node-id=85%3A141"
+                                                   class="contest-link-frame">
+                                                    <div>
+                                                        <p>https://www.figma.com/file/RtKaI0ZFnSAX7CDt8mIKElD8/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD---%D0%BF%D0%B0%D0%BA-3?node-id=85%3A141</p>
+                                                    </div>
+                                                </a>
+                                                <div class="contest-link-wrapper">
+                                                    <img src="img/test.png" />
                                                 </div>
-                                                <p class="accounting-btn cancel open-block" data-blockid="authorize">Отмена</p>
-                                                <button type="submit" class="accounting-btn registration">
-                                                    Зарегистрироваться
-                                                </button>
-                                            </form>
-
-
-                                        </section>
-
-                                        <section class="contest-action__container disable forgot-password"
-                                                 data-block="forgot-password">
-                                            <p class="contest-action-text">Восстановление пароля</p>
-                                            <p class="contest-action-text--small">После заполнения формы мы отправим
-                                                специальную ссылку на указанный электронный адрес, перейдя по которой
-                                                вы сможете задать новый пароль</p>
-                                            <form class="forgot-form" method="post" action="">
-                                                <div class="account-field-wrapper">
-                                                    <label for="forgot_email" class="accounting-label mail"></label>
-                                                    <input type="email" name="registration_email" id="forgot_email"
-                                                           class="accounting-field" placeholder="Введите ваш email"/>
-                                                </div>
-                                                <p class="accounting-btn forgot-cancel open-block"
-                                                   data-blockid="authorize">Отмена</p>
-                                                <p class="accounting-btn forgot-registration">Отправить</p>
-                                            </form>
-                                        </section>
-
-                                        <section class="contest-action__container disable registration"
-                                                 data-block="registration">
-                                            <p class="contest-action-text">Вход</p>
-                                            <p class="contest-action-text--btn open-block"
-                                               data-blockid="forgot-password">Забыли пароль?</p>
-
-                                            <div class="contest-action__social">
-                                                <p class="contest-action-social mail"></p>
-                                                <p class="contest-action-social vk"></p>
-                                                <p class="contest-action-social fb"></p>
-                                                <p class="contest-action-social tw"></p>
-                                            </div>
-
-                                            <form class="contest-action-form last" method="" action="">
-
-                                                <div class="account-field-wrapper">
-                                                    <label for="acc_email" class="accounting-label mail"></label>
-                                                    <input type="email" name="registration_email" id="acc_email"
-                                                           class="accounting-field" placeholder="Введите ваш email"/>
-                                                </div>
-
-                                                <div class="account-field-wrapper">
-                                                    <label for="acc_pass" class="accounting-label pswrd"></label>
-                                                    <input type="password" name="registration_email" id="acc_pass"
-                                                           class="accounting-field" placeholder="Пароль"/>
-                                                </div>
-                                                <p class="accounting-btn cancel open-block"
-                                                   data-blockid="authorize">
-                                                    Отмена</p>
-                                                <button class="accounting-btn registration">Войти</button>
-
-                                            </form>
-
-                                            <div class="account__footer">
-                                                <p class="account-text">Нет аккаунта?
-                                                    <span class="red open-block" data-blockid="signup">Зарегистрироваться</span>
-                                                </p>
-                                                <p class="account-forgot-password-btn open-block"
-                                                   data-blockid="forgot-password">Забыли пароль?</p>
                                             </div>
 
                                         </section>
@@ -426,7 +352,10 @@
                                     </div>
                                     <!-- end -->
 
-                                    <a href="#" class="contest-link-more">Остальные условия ...</a>
+                                    <div class="contest__block">
+                                        <a href="#" class="contest-link-more">Остальные условия ...</a>
+                                        <p class="contest-hint"><sup>*</sup> Обязательные условия</p>
+                                    </div>
 
                                 </footer>
                             </div>

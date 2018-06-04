@@ -26,6 +26,10 @@ $(document).ready(function () {
             $('.account__box.box-disable').removeClass('box-disable').addClass('box-active');
             $('[data-block = register-form]').addClass('box-disable').removeClass('box-active');
             $("input.checkbox__input.open-form").prop('checked', false);
+
+            $('.contest-action__container').each(function () {
+                $(this).addClass('disable');
+            });
         }
     });
 
@@ -63,7 +67,7 @@ $(document).ready(function () {
         $("input.checkbox__input.open-form").prop('checked', false);
     }
 
-    // Клик по области с 
+    // Клик по области с
     $(document).on('click', '.open-form', function () {
         if ($('input.checkbox__input.open-form').is(':checked')) {
             $('.account__box.box-active').addClass('box-disable').removeClass('box-active');
@@ -72,11 +76,6 @@ $(document).ready(function () {
         else {
             remove_form();
         }
-    });
-
-    $(function() {
-        let height = $('.wrapper_organizer-page .organizer-page__header img').height();
-        $('.wrapper_organizer-page .organizer-page__header img').css('top', 'calc(50% - ' + (height/2) + ')');
     });
 
 });
